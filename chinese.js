@@ -1,11 +1,7 @@
 
-// cd /opt/jfrog/artifactory/app/frontend/bin/client/dist/
-// 1. put chinese.js into ./js
-// 2. add <link href=/ui/js/chinese.js rel=preload as=script> and <script src=/ui/js/chinese.js></script> into index.html
-
 var myMap = myMap || {
 
-    "Welcome" : "欢迎",
+    "Welcome" : "欢迎光临",
     "Happily serving" : "正在管理",
     "artifacts" : "制品",
     "Filter by" : "过滤条件",
@@ -60,7 +56,6 @@ var myMap = myMap || {
     "Dependency Declaration" : "依赖声明",
     "Build Tool" : "构建工具",
 
-    "Xray" : "Xray 漏洞扫描",
     "Violations" : "违反",
     "Security" : "安全",
     "Licenses" : "许可证",
@@ -123,7 +118,7 @@ function replaceInText(element, pattern, replacement) {
 
 // replaceInText(document.body, /Artifactory/g, '制品库');
 
-function foo(back = false){
+function translate(back = false){
 
     var i;
     for(i in myMap){
@@ -150,7 +145,7 @@ function initChinese(){
     button1.style.textAlign = 'center';
     var linkText = document.createTextNode("中文");
     button1.appendChild(linkText);
-    button1.addEventListener('click', function(){ foo() });
+    button1.addEventListener('click', function(){ translate() });
     arr[0].appendChild(button1);
 
 
@@ -159,7 +154,7 @@ function initChinese(){
     button2.style.textAlign = 'center';
     var linkText = document.createTextNode("英文");
     button2.appendChild(linkText);
-    button2.addEventListener('click', function(){ foo(1) });
+    button2.addEventListener('click', function(){ translate(1) });
     arr[0].appendChild(button2);
 
 }
@@ -171,9 +166,16 @@ var existCondition = setInterval(function() {
     var arr = document.getElementsByClassName("help-container");
 
     if (arr.length) {
-       console.log("Exists!");
+       
+        // 使用方式1: 初始化中文翻译按钮， 使用时手动点击
+       console.log("initChinese");
        clearInterval(existCondition);
        initChinese();
+
+       // 使用方式2: 持续自动翻译
+       // console.log("translate");
+       // translate();
+
     }
 }, 100);
 
