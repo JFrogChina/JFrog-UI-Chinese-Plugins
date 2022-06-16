@@ -136,7 +136,7 @@ function translate(back = false){
 
 };
 
-function initChinese(){
+function addButton(){
 
     var arr = document.getElementsByClassName("help-container");
 
@@ -159,24 +159,27 @@ function initChinese(){
 
 }
 
+export default function initChinese(){
 
+    var existCondition = setInterval(function() {
 
-var existCondition = setInterval(function() {
+        var arr = document.getElementsByClassName("help-container");
+    
+        if (arr.length) {
+           
+            // 使用方式1: 初始化中文翻译按钮， 使用时手动点击
+           console.log("add chinese button");
+           clearInterval(existCondition);
+           addButton();
+    
+           // 使用方式2: 持续自动翻译
+           // console.log("translate");
+           // translate();
+    
+        }
+    }, 100);
+    
+}
 
-    var arr = document.getElementsByClassName("help-container");
-
-    if (arr.length) {
-       
-        // 使用方式1: 初始化中文翻译按钮， 使用时手动点击
-       console.log("initChinese");
-       clearInterval(existCondition);
-       initChinese();
-
-       // 使用方式2: 持续自动翻译
-       // console.log("translate");
-       // translate();
-
-    }
-}, 100);
 
    

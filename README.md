@@ -1,31 +1,46 @@
 
-# artifactory　中文插件
+# jfrog ui plugins
 
+- install
 
-- 安装步骤
+        1. upload plugins to Artifactory's frontend's folder
+        e.g. /opt/jfrog/artifactory/app/frontend/bin/client/dist/plugins
 
-        1. 上传中文插件 chinese.js 到 Artifactory 前端 UI 的安装目录下
-        例如 /opt/jfrog/artifactory/app/frontend/bin/client/dist/js/chinese.js
+        2. edit Artifactory's frontend's index.html, include plugins.js
+        
+        e.g. download /opt/jfrog/artifactory/app/frontend/bin/client/dist/index.html
+        edit index.html, add below links
+        
+        <link href=/ui/plugins/plugins.js rel=preload as=script>
+        <script type="module" src=/ui/plugins/plugins.js></script> into index.html
+        
+        refer to index.html in this github repo to make sure position correct
+        then upload index.html back to server
 
-        2. 修改 Artifactory 前端 UI 的 index.html，引用 chinese.js
-        例如先下载 /opt/jfrog/artifactory/app/frontend/bin/client/dist/index.html
-        将 <link href=/ui/js/chinese.js rel=preload as=script> 和 <script src=/ui/js/chinese.js></script> 添加进 index.html
-        具体添加位置可参考本代码库中的 index.html， 然后回传到服务器上
+- chinese plugin
 
-- 使用步骤
+        1. login Artifactory
+        2. to translate, click 中文, click 英文 to switch back to English
+        3. if not willing to click manually, edit chinese.js, change code to translate automatically
 
-        1. 登录 Artifactory
-        2. 需要翻译时， 点击右上角的 中文 进行翻译， 点击 英文 切换回来
-        3. 如果不想手动点击， 可以修改 chinese.js 中， 选择其中使用方式2， 进行持续自动翻译
-
-- 效果截图
+        screenshots as below
 
     ![image info](./images/1.png)
     ![image info](./images/2.png)
         
+- demo plugin
 
+        1. login Artifactory
+        2. visit http://x.x.x.x:8082/ui/plugins/demo/
 
+        easy to call UI API
+        easy to call REST API
+        no need to manage permissions
 
+        - todo
+        secure encrypted password
+
+        
 
 
 
