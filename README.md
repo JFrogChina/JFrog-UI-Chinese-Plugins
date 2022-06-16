@@ -1,6 +1,19 @@
 
 # jfrog ui plugins
 
+- why
+
+        1. localization / 本地化
+        2. custom UI / 定制化
+        3. curation / 引入流程
+
+- what
+
+        1. native UI API accessible out of box (via cookie, no need to change URL)
+        2. easy accessible JFROG REST API with managed access token
+        3. no need to manage users/permissions, as permissions consistent with your login user
+        4. no need to have backend program, use your favorite html/js framework directly talking to jfrog API
+
 - install
 
         1. upload plugins to Artifactory's frontend's folder
@@ -33,12 +46,6 @@
         1. login Artifactory
         2. visit http://x.x.x.x:8082/ui/plugins/demo/
 
-        easy to call UI API
-        easy to call REST API
-        no need to manage permissions
-
-        - todo
-        secure encrypted password
 
         
 
