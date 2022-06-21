@@ -124,11 +124,11 @@ function translate(back = false){
     for(i in myMap){
         let regex;
         if(!back){
-            console.log(i + '=' + myMap[i]);
+            // console.log(i + '=' + myMap[i]);
             regex = new RegExp('' + i + '', 'g');
             replaceInText(document.body, regex, myMap[i]);
         } else {
-            console.log(myMap[i] + '=' + i);
+            // console.log(myMap[i] + '=' + i);
             regex = new RegExp('' + myMap[i] + '', 'g');
             replaceInText(document.body, regex, i);
         }
@@ -136,48 +136,33 @@ function translate(back = false){
 
 };
 
-function addButton(){
+function addButton(className, text, func){
 
-    var arr = document.getElementsByClassName("help-container");
-
-    var button1 = document.createElement('span');
-    button1.style.width = '50px';
-    button1.style.textAlign = 'center';
-    var linkText = document.createTextNode("中文");
-    button1.appendChild(linkText);
-    button1.addEventListener('click', function(){ translate() });
-    arr[0].appendChild(button1);
-
-
-    var button2 = document.createElement('span');
-    button2.style.width = '50px';
-    button2.style.textAlign = 'center';
-    var linkText = document.createTextNode("英文");
-    button2.appendChild(linkText);
-    button2.addEventListener('click', function(){ translate(1) });
-    arr[0].appendChild(button2);
-
+    let arr = document.getElementsByClassName(className);
+    if(arr.length){
+        let button = document.createElement('span');
+        button.style.width = '50px';
+        button.style.textAlign = 'center';
+        let linkText = document.createTextNode(text);
+        button.appendChild(linkText);
+        button.addEventListener('click', func);
+        arr[0].appendChild(button);
+    }
+    
 }
 
-export default function initChinese(){
+export default function initChinese(className){
 
-    var existCondition = setInterval(function() {
-
-        var arr = document.getElementsByClassName("help-container");
-    
-        if (arr.length) {
-           
-            // 使用方式1: 初始化中文翻译按钮， 使用时手动点击
-           console.log("add chinese button");
-           clearInterval(existCondition);
-           addButton();
-    
-           // 使用方式2: 持续自动翻译
-           // console.log("translate");
-           // translate();
-    
-        }
-    }, 100);
+    if(className){
+        // 使用方式1: 初始化中文翻译按钮， 使用时手动点击
+        addButton(className, '中文', function(){ translate() });
+        addButton(className, 'English', function(){ translate(1) });
+    } else {
+        // 使用方式2: 持续自动翻译
+        setInterval(function() {
+            translate();
+        }, 300);
+    }
     
 }
 

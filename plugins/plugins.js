@@ -1,9 +1,8 @@
 
-// chinese plugin
+// import chinese plugin
 import initChinese from './chinese/chinese.js'; 
-initChinese();
 
-// auth for jfrog rest api
+// prepare auth for jfrog rest api
 // 1. get username/password
 const nativeSend = XMLHttpRequest.prototype.send;
 const proxiedSend = async function (body) {
@@ -12,7 +11,7 @@ const proxiedSend = async function (body) {
         if(json.user && json.password) {
             console.log('login action');
 
-            // 2. call profile api to get encrypted password
+            // 2. call api to get access token
             let baseUrl = window.location.protocol + '//' + window.location.host;
             baseUrl = baseUrl + '/artifactory/api/security/token';
 
@@ -46,6 +45,51 @@ const proxiedSend = async function (body) {
 };
 XMLHttpRequest.prototype.send = proxiedSend;
 
+// some functions
+function addButton(className, text, func){
+
+    let arr = document.getElementsByClassName(className);
+    if(arr.length){
+        let button = document.createElement('span');
+        button.style.width = '50px';
+        button.style.textAlign = 'center';
+        let linkText = document.createTextNode(text);
+        button.appendChild(linkText);
+        button.addEventListener('click', func);
+        arr[0].appendChild(button);
+    }
+    
+}
+
+// init plugins
+function initPlugins(){
+
+    let className = 'help-container';
+    var existInitPlugins = setInterval(function() {
+
+        let arr = document.getElementsByClassName(className);
+        if (arr.length) {
+            console.log("ready to add ui plugins");
+        
+            // chinese plugin - by manual click
+            initChinese(className);
+
+            // chinese plugin - by auto run
+            // initChinese();
+
+            // add plugins button
+            addButton(className, 'UI 插件', function(){
+                let baseUrl = window.location.protocol + '//' + window.location.host;
+                baseUrl = baseUrl + '/ui/plugins/index/';
+                window.open(baseUrl);
+            });
+
+            clearInterval(existInitPlugins);
+        }
+    }, 100);
+    
+}
+
+initPlugins();
 
 
-  
