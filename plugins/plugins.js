@@ -78,7 +78,7 @@ function initPlugins(){
             // initChinese();
 
             // add plugins button
-            addButton(className, 'UI 插件', function(){
+            addButton(className, 'UI Plugins', function(){
                 let baseUrl = window.location.protocol + '//' + window.location.host;
                 baseUrl = baseUrl + '/ui/plugins/index/';
                 window.open(baseUrl);
