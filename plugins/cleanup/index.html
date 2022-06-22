@@ -46,8 +46,18 @@ items.find(
     <h3> AQL result </h3>
     <div>
       <el-table
+        ref="multipleTable"
         :data="tableData"
-        style="width: 100%">
+        stripe
+        style="width: 100%"
+        @selection-change="handleSelectionChange">
+
+
+        <el-table-column
+          type="selection"
+          width="55">
+        </el-table-column>
+
         <el-table-column
           prop="repo"
           label="repo"
@@ -66,10 +76,28 @@ items.find(
           prop="size"
           label="size (MB)">
         </el-table-column>
+        <el-table-column
+          prop="status"
+          label="status">
+
+          <template slot-scope="scope">
+            <el-tag
+              :type="scope.row.status === 'failed to delete' ? 'danger' : 'success'"
+              disable-transitions>{{scope.row.status}}</el-tag>
+          </template>
+    
+        </el-table-column>
       </el-table>
     </div>
     <div style="text-align: right; margin-top: 10px;">
-      <el-button type="primary" @click="fnDelete()">Delete</el-button>
+     
+      <el-popconfirm
+        title="Are you sure to delete this?"
+        @confirm="fnDelete"
+      >
+        <el-button type="primary" slot="reference" >Delete</el-button>
+      </el-popconfirm>
+
     </div>
     
   </div>
@@ -85,7 +113,15 @@ items.find(
       data: function() {
         return {           
           aql: '',
-          tableData: []
+          tableData: [
+            {
+              repo: 'repo',
+              path: 'path',
+              name: 'name',
+              size: 123,
+            }
+          ],
+          multipleSelection: []
         }
       },
       created() {
@@ -114,6 +150,7 @@ items.find(
                 
                 data.results.forEach(e=>{
                    e.size = (e.size / (1024*1024)).toFixed(3);
+                   e.status = '';
                 })
                 that.tableData = data.results;
                 
@@ -135,7 +172,36 @@ items.find(
         },
 
         fnDelete: function(){
+          let that = this;
 
+          that.multipleSelection.forEach(e=>{
+            let baseUrl = window.location.protocol + '//' + window.location.host;
+            baseUrl = baseUrl + '/artifactory/' + e.repo;
+            if(e.path != '.'){
+              baseUrl = baseUrl + '/' + e.path;
+            }
+            baseUrl = baseUrl + '/' + e.name;
+
+            $.ajax({
+                username: that.fnGetCookie('user'),
+                password: that.fnGetCookie('token'),
+                type: "DELETE",
+                url: baseUrl,
+                contentType: "application/json",
+                success: function (data) {
+                  e.status = 'deleted'
+                }, error:function(data){
+                  e.status = 'failed to delete'
+              }
+            });
+              e.status = '';
+          })
+
+          
+        },
+
+        handleSelectionChange(val) {
+          this.multipleSelection = val;
         },
 
         fnGetCookie : function(cname) {

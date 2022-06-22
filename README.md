@@ -32,6 +32,14 @@
         
         refer to index.html in this github repo to make sure position correct
         3. then upload index.html back to server
+        
+- plugins list
+
+        1. login Artifactory
+        2. click 'UI Plugins'
+
+    ![image info](./images/03.png)
+    ![image info](./images/04.png)
 
 - chinese plugin
 
@@ -43,14 +51,10 @@
 
     ![image info](./images/01.png)
     ![image info](./images/02.png)
-        
-- plugins list
 
-        1. login Artifactory
-        2. click 'UI Plugins'
+- cleanup plugin
 
-    ![image info](./images/03.png)
-    ![image info](./images/04.png)
+    ![image info](./images/05.png)
 
 
         

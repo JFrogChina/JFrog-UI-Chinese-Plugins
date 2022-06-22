@@ -38,8 +38,34 @@
 
     <div>
       for auth, it will be done via cookie automatically
+      inspect this page/code to monitor the ajax call
     </div>
     
+    <h3> api result - list of repos you have permission</h3>
+    <div>
+      <el-table
+        :data="tableData"
+        style="width: 100%">
+
+        <el-table-column
+          prop="repoKey"
+          label="repoKey"
+          width="180">
+        </el-table-column>
+       
+        <el-table-column
+          prop="repoPkgType"
+          label="repoPkgType"
+          width="180">
+        </el-table-column>
+        
+        <el-table-column
+          prop="repoType"
+          label="repoType"
+          width="280">
+        </el-table-column>
+      </el-table>
+    </div>
    
   </div>
 </body>
@@ -53,7 +79,7 @@
       el: '#app',
       data: function() {
         return {           
-          
+          tableData: []
         }
       },
       created() {
@@ -64,6 +90,7 @@
         // call UI API
         fnFoo: function() {
           console.log('call UI API')
+          let that = this;
 
           let data = {"projectKey":"","type":"root","mustInclude":null,"packageTypes":[],"repositoryTypes":[],"sortBy":"REPO_TYPE","continueState":null,"byRepoKey":null,"repositoryKeys":[]};
 
@@ -78,6 +105,12 @@
               headers: {"X-Requested-With": "XMLHttpRequest"},
               success: function (data) {
                   console.log('data=', data);
+                  that.tableData = data.data;
+                  that.$message({
+                      showClose: true,
+                      message: 'Success',
+                      type: 'success'
+                  });
               }
           });
           
