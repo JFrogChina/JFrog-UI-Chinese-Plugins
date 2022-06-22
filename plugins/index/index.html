@@ -10,7 +10,31 @@
 <body>
   <div id="app">
 
-      index
+    <div style="margin: 40px;">
+      <h1>JFrog UI Plugins</h1>
+    </div>
+
+    <el-row>
+      
+      <el-col :span="4" v-for="it in list" style="text-align: center; padding: 10px; border: 0.5px solid #eee; ">
+        
+        <el-image
+          style="width: 100px; height: 100px"
+          :src="it.logo"
+          :fit="'cover'"
+          ></el-image>
+        
+        <div>
+          <el-button type="text" class="button" @click="fnOpen( it.url )">{{ it.name }}</el-button>
+          <div>
+            {{ it.desc }}
+          </div>
+        </div>
+
+      </el-co>
+
+    </el-row>
+    
           
   </div>
 </body>
@@ -24,14 +48,65 @@
       el: '#app',
       data: function() {
         return {           
-          
+          list: [
+                    { 
+                      name: 'native UI API demo',
+                      url: '../native-ui-api/index.html',
+                      desc: 'desc',
+                      logo:  './images/jfrog.png'
+                    },
+                    { 
+                      name: 'JFrog REST API demo',
+                      url: '../rest-api/index.html',
+                      desc: 'desc',
+                      logo:  './images/jfrog.png'
+                    },
+                    { 
+                      name: 'cleanup',
+                      url: '../cleanup/index.html',
+                      desc: 'desc',
+                      logo:  './images/cleanup.png'
+                    },
+                    { 
+                      name: 'xxx',
+                      url: '../xxx/index.html',
+                      desc: 'desc',
+                      logo:  './images/default.png'
+                    },
+                    { 
+                      name: 'xxx',
+                      url: '../xxx/index.html',
+                      desc: 'desc',
+                      logo:  './images/default.png'
+                    },
+                    { 
+                      name: 'xxx',
+                      url: '../xxx/index.html',
+                      desc: 'desc',
+                      logo:  './images/default.png'
+                    },
+                    { 
+                      name: 'xxx',
+                      url: '../xxx/index.html',
+                      desc: 'desc',
+                      logo:  './images/default.png'
+                    },
+                    { 
+                      name: 'xxx',
+                      url: '../xxx/index.html',
+                      desc: 'desc',
+                      logo:  './images/default.png'
+                    },
+                ]
         }
       },
       created() {
         
       },
       methods: {
-
+        fnOpen: function(url){
+          window.open(url);
+        }
       }
     })
   </script>

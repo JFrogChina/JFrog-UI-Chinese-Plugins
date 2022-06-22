@@ -49,6 +49,9 @@
         1. login Artifactory
         2. click 'UI Plugins'
 
+    ![image info](./images/3.png)
+    ![image info](./images/4.png)
+
 
         
 

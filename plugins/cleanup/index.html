@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no" />
+
+  <!-- import CSS -->
+  <link rel="stylesheet" href="./element-ui@2.15.9.index.css">
+</head>
+<body>
+  <div id="app" style="margin: 40px;">
+
+    <div>
+      <h1>Cleanup</h1> 
+
+      <el-link type="primary" href="https://www.jfrog.com/confluence/display/JFROG/Artifactory+Query+Language" target="_blank">Artifactory Query Language (AQL)</el-link>
+
+      <h3> AQL example </h3>
+    </div>
+
+    <pre>
+      <code style="background-color: #eee; display: block;">
+items.find(
+            {
+                "repo":"example-repo-local",
+                "path": {"$match" : "*"},
+                "name": {"$match" : "*"},
+                "created" : {"$before" : "1d"},
+                "stat.downloads":{"$eq":null}
+            }
+        )
+    </code>
+    </pre>
+
+    <el-form label-width="120px">
+      
+      <el-form-item label="AQL">
+        <el-input type="textarea" v-model="aql"></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="fnAQL()">Search</el-button>
+      </el-form-item>
+    </el-form>
+          
+  
+    <h3> AQL result </h3>
+    <div>
+      <el-table
+        :data="tableData"
+        style="width: 100%">
+        <el-table-column
+          prop="repo"
+          label="repo"
+          width="180">
+        </el-table-column>
+        <el-table-column
+          prop="path"
+          label="path"
+          width="280">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="name">
+        </el-table-column>
+        <el-table-column
+          prop="size"
+          label="size (MB)">
+        </el-table-column>
+      </el-table>
+    </div>
+    <div style="text-align: right; margin-top: 10px;">
+      <el-button type="primary" @click="fnDelete()">Delete</el-button>
+    </div>
+    
+  </div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="./vue@2.6.14.js"></script>
+  <!-- import JavaScript -->
+  <script src="./element-ui@2.15.9.index.js"></script>
+  <script src="./jquery.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {           
+          aql: '',
+          tableData: []
+        }
+      },
+      created() {
+        
+        
+      },
+      methods: {
+
+        fnAQL: function(){
+          let that = this;
+        
+          // search by aql
+          let baseUrl = window.location.protocol + '//' + window.location.host;
+          baseUrl = baseUrl + '/artifactory/api/search/aql';
+          
+          let payload = that.aql;
+          $.ajax({
+              username: that.fnGetCookie('user'),
+              password: that.fnGetCookie('token'),
+              type: "POST",
+              url: baseUrl,
+              data: payload,
+              contentType: "text/plain",
+              dataType:'json',
+              success: function (data) {
+                
+                data.results.forEach(e=>{
+                   e.size = (e.size / (1024*1024)).toFixed(3);
+                })
+                that.tableData = data.results;
+                
+                that.$message({
+                    showClose: true,
+                    message: 'Success',
+                    type: 'success'
+                  });
+                  
+              }, error:function(data){
+                that.$message({
+                  showClose: true,
+                  message: data.messages[0].message,
+                  type: 'error'
+                });
+              }
+          });
+
+        },
+
+        fnDelete: function(){
+
+        },
+
+        fnGetCookie : function(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+              let c = ca[i];
+              while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+              }
+            }
+            return "";
+        }
+
+      }
+    })
+  </script>
+</html>
+

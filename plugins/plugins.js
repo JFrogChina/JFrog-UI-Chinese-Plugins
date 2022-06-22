@@ -7,8 +7,15 @@ import initChinese from './chinese/chinese.js';
 const nativeSend = XMLHttpRequest.prototype.send;
 const proxiedSend = async function (body) {
     if(body){
-        let json = JSON.parse(body);
-        if(json.user && json.password) {
+        
+        let json = undefined;
+        try {
+            json = JSON.parse(body);
+        } catch (error) {
+            console.log('not json body, no worry', error);
+        }
+        
+        if(json && json.user && json.password) {
             console.log('login action');
 
             // 2. call api to get access token
@@ -26,20 +33,21 @@ const proxiedSend = async function (body) {
             
             var formBody = [];
             for (var property in details) {
-              var encodedKey = encodeURIComponent(property);
-              var encodedValue = encodeURIComponent(details[property]);
-              formBody.push(encodedKey + "=" + encodedValue);
+            var encodedKey = encodeURIComponent(property);
+            var encodedValue = encodeURIComponent(details[property]);
+            formBody.push(encodedKey + "=" + encodedValue);
             }
             formBody = formBody.join("&");
             
             const data = await fetch(baseUrl, {method:'POST', headers: headers, body: formBody}).then(res => res.json());
             let token = data.access_token;
-            console.log('token=', token);
+            console.log('token ready');
 
             // 3. for later usage in ajax header
             document.cookie = "user="+ json.user +"; max-age=3600; path=/;";
             document.cookie = "token="+ token +"; max-age=3600; path=/;";
         }
+        
     }  
     nativeSend.apply(this, arguments);
 };

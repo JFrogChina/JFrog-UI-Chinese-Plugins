@@ -8,9 +8,37 @@
   <link rel="stylesheet" href="./element-ui@2.15.9.index.css">
 </head>
 <body>
-  <div id="app">
+  <div id="app" style="margin: 40px;">
 
-      demo, check brwoser's console
+    <div>
+      <h1>REST API demo</h1>
+    </div>
+
+    <div>
+      rest API url example - http://x.x.x.x:8081/<b style="font-size: 20px;">artifactory</b>/api/storage/example-repo-local
+      <br>
+      <br>
+      you can have ajax call like this
+    </div>
+
+    <pre>      
+      <code style="background-color: #eee; display: block;">
+          $.ajax({
+              username: that.fnGetCookie('user'),
+              password: that.fnGetCookie('token'),
+              type: "GET",
+              url: baseUrl,
+              contentType: "application/json",
+              success: function (data) {
+                  console.log('data=', data);
+              }
+          });
+      </code>
+    </pre>
+
+    <div>
+      for auth, you can get user/token from cookie
+    </div>
           
   </div>
 </body>
@@ -28,39 +56,11 @@
         }
       },
       created() {
-        this.fnFoo();
         this.fnBar();
       },
       methods: {
 
-        // call UI API
-        fnFoo: function() {
-          console.log('call UI API')
-
-          let data = {
-            "projectKey":"",
-            "type":"repository",
-            "repoType":"local",
-            "repoPath":"example-repo-local",
-            "repoPkgType":"Generic"
-          };
-
-          let baseUrl = window.location.protocol + '//' + window.location.host;
-          baseUrl = baseUrl + '/ui/api/v1/ui/treebrowser/tabsAndActions';
-
-          $.ajax({
-              type: "POST",
-              url: baseUrl,
-              data: JSON.stringify(data),
-              contentType: "application/json",
-              headers: {"X-Requested-With": "XMLHttpRequest"},
-              success: function (data) {
-                  console.log('data=', data);
-              }
-          });
-          
-        },
-
+  
         // call REST API
         fnBar: function() {
           console.log('call REST API')
