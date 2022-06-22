@@ -7,7 +7,7 @@
         2. custom UI / 定制化
         3. curation / 引入流程
         
-        you can imageine ...
+        you can imagine ...
 
 - how
 
@@ -41,16 +41,16 @@
 
         screenshots as below
 
-    ![image info](./images/1.png)
-    ![image info](./images/2.png)
+    ![image info](./images/01.png)
+    ![image info](./images/02.png)
         
 - plugins list
 
         1. login Artifactory
         2. click 'UI Plugins'
 
-    ![image info](./images/3.png)
-    ![image info](./images/4.png)
+    ![image info](./images/03.png)
+    ![image info](./images/04.png)
 
 
         
