@@ -27,6 +27,10 @@
                 - Providing statistics, visibility and analytics for D2D usage and security
                 https://www.jfrog.com/jira/projects/JUX/issues/JUX-35
 
+        - technical thinking
+
+    ![image info](./images/00.png)
+
 - how
 
         1. hack UI e.g. use Chinese
