@@ -24,8 +24,9 @@
     <pre>      
       <code style="background-color: #eee; display: block;">
           $.ajax({
-              username: that.fnGetCookie('user'),
-              password: that.fnGetCookie('token'),
+              headers: {
+                "Authorization": "Basic " + btoa(that.fnGetCookie('user') + ":" + that.fnGetCookie('token'))
+              },          
               type: "GET",
               url: baseUrl,
               contentType: "application/json",
@@ -71,8 +72,9 @@
           baseUrl = baseUrl + '/artifactory/api/storage/example-repo-local';
 
           $.ajax({
-              username: that.fnGetCookie('user'),
-              password: that.fnGetCookie('token'),
+              headers: {
+                "Authorization": "Basic " + btoa(that.fnGetCookie('user') + ":" + that.fnGetCookie('token'))
+              },  
               type: "GET",
               url: baseUrl,
               contentType: "application/json",

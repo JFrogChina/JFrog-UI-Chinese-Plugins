@@ -132,8 +132,9 @@ items.find(
           
           let payload = that.aql;
           $.ajax({
-              username: that.fnGetCookie('user'),
-              password: that.fnGetCookie('token'),
+              headers: {
+                "Authorization": "Basic " + btoa(that.fnGetCookie('user') + ":" + that.fnGetCookie('token'))
+              },    
               type: "POST",
               url: baseUrl,
               data: payload,
