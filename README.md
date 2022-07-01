@@ -27,7 +27,6 @@
                 - Providing statistics, visibility and analytics for D2D usage and security
                 https://www.jfrog.com/jira/projects/JUX/issues/JUX-35
 
-        - technical thinking
 
     ![image info](./images/art.png)
 
@@ -69,8 +68,6 @@
 
         1. login Artifactory
         2. to translate, click '中文', click 'En' to switch back to English
-        3. check plugins.js for its config params
-
 
     Chinese
     ![image info](./images/cn.png)
