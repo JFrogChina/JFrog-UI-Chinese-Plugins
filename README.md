@@ -1,5 +1,5 @@
 
-# jfrog ui plugins
+# JFrog UI Plugins
 
 - why
 
@@ -65,10 +65,10 @@
     ![image info](./images/03.png)
     ![image info](./images/04.png)
 
-- chinese plugin
+- i18n plugin
 
         1. login Artifactory
-        2. to translate, click '中文', click 'English' to switch back to English
+        2. to translate, click '中文', click 'En' to switch back to English
         3. if not willing to click manually, edit plugins.js, change code to enable auto translation
 
         screenshots as below

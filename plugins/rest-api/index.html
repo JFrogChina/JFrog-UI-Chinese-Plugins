@@ -41,6 +41,11 @@
       for auth, you can get user/token from cookie
       inspect this page/code to monitor the ajax call
     </div>
+
+    <h3> api result</h3>
+    <div>
+      {{ result }}
+    </div>
           
   </div>
 </body>
@@ -54,7 +59,7 @@
       el: '#app',
       data: function() {
         return {           
-          
+          result : ''
         }
       },
       created() {
@@ -80,6 +85,7 @@
               contentType: "application/json",
               success: function (data) {
                   console.log('data=', data);
+                  that.result = JSON.stringify(data);
               }
           });
           

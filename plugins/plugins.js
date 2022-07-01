@@ -1,6 +1,5 @@
 
-// import chinese plugin
-import initChinese from './chinese/chinese.js'; 
+import * as i18n from './i18n/i18n.js'; 
 
 // prepare auth for jfrog rest api
 // 1. get username/password
@@ -78,14 +77,14 @@ function initPlugins(){
         let arr = document.getElementsByClassName(className);
         if (arr.length) {
             console.log("ready to add ui plugins");
-        
-            // chinese plugin - by manual click
-            initChinese(className);
+                    
+            // add i18n plugin
+            // i18n.config.autoTranslate = true;
+            // i18n.config.autoTarget = '中文';
 
-            // chinese plugin - by auto run
-            // initChinese();
+            i18n.init(i18n.config)
 
-            // add plugins button
+            // add other UI plugins
             addButton(className, 'UI Plugins', function(){
                 let baseUrl = window.location.protocol + '//' + window.location.host;
                 baseUrl = baseUrl + '/ui/plugins/index/';
