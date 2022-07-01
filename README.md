@@ -29,7 +29,7 @@
 
         - technical thinking
 
-    ![image info](./images/00.png)
+    ![image info](./images/art.png)
 
 - how
 
@@ -62,23 +62,28 @@
         1. login Artifactory
         2. click 'UI Plugins'
 
-    ![image info](./images/03.png)
-    ![image info](./images/04.png)
+    ![image info](./images/plugin_button.png)
+    ![image info](./images/plugin_list.png)
 
 - i18n plugin
 
         1. login Artifactory
         2. to translate, click '中文', click 'En' to switch back to English
-        3. if not willing to click manually, edit plugins.js, change code to enable auto translation
+        3. check plugins.js for its config params
 
-        screenshots as below
 
-    ![image info](./images/01.png)
-    ![image info](./images/02.png)
+    Chinese
+    ![image info](./images/cn.png)
+
+    French
+    ![image info](./images/fr.png)
+
+    Japanese
+    ![image info](./images/ja.png)
 
 - cleanup plugin
 
-    ![image info](./images/05.png)
+    ![image info](./images/clean.png)
 
 
         

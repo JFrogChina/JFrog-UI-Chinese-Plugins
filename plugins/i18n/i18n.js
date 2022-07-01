@@ -1,11 +1,11 @@
 
 var config = config || {
 
-    "autoTranslate" : false,
-    "autoTarget" : "中文",
-    "manualClassName" : "help-container",
-    "manualTargetList" : ["En", "Fr", "De", "日本语", "中文"],
+    "className" : "help-container",
+    "targetList" : ["En", "Fr", "De", "日本语", "中文"],
     "current" : "En",
+    "target" : "En",
+    "interval" : 300,
 
     "En": {
     },
@@ -322,9 +322,9 @@ function replaceInText(element, pattern, replacement) {
 
 // replaceInText(document.body, /Artifactory/g, '制品库');
 
-function translate(target){
+function translate(){
 
-    let targetMap = config[target];
+    let targetMap = config[config.target];
     let currentMap = config[config.current];
 
     if(!targetMap){
@@ -345,7 +345,7 @@ function translate(target){
     }
 
     // to target
-    if(target != 'En'){
+    if(config.target != 'En'){
         for(i in targetMap){
             let regex;
             
@@ -358,7 +358,7 @@ function translate(target){
         }
     }
 
-    config.current = target;
+    config.current = config.target;
 
 };
 
@@ -379,22 +379,19 @@ function addButton(className, text, func){
 
 function init(_config){
 
-    if(_config.autoTranslate){
-
-         // auto translation to 1 target
-         setInterval(function() {
-            translate(_config.autoTarget);
-        }, 300);        
-
-    } else {
-       // manual translation by buttons
-
-       for (let target of _config.manualTargetList) {
-            if(config[target]){
-                addButton(_config.manualClassName,  target, function(){ translate(target) });
-            }
+    // add buttons
+    for (let target of _config.targetList) {
+        if(config[target]){
+            addButton(_config.className,  target, function(){ 
+                config.target = target;
+            });
         }
     }
+
+    // start
+    setInterval(function() {
+        translate();
+    }, config.interval);    
     
 }
 

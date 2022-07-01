@@ -79,9 +79,8 @@ function initPlugins(){
             console.log("ready to add ui plugins");
                     
             // add i18n plugin
-            // i18n.config.autoTranslate = true;
-            // i18n.config.autoTarget = '中文';
-
+            i18n.config.target = 'En';
+            i18n.config.targetList = ["En", "Fr", "日本语", "中文"];
             i18n.init(i18n.config)
 
             // add other UI plugins
