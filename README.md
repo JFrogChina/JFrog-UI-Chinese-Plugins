@@ -27,17 +27,10 @@
                 - Providing statistics, visibility and analytics for D2D usage and security
                 https://www.jfrog.com/jira/projects/JUX/issues/JUX-35
 
-
-    ![image info](./images/Slide1.png)
-    ![image info](./images/Slide1.png)
-
 - how
 
-        1. hack UI e.g. use Chinese
-        2. native UI API accessible out of box (via cookie, no need to change URL)
-        3. JFROG REST API accessible with builtin auth - managed access token
-        4. no backend program, use your favorite html/js framework directly talking to jfrog API
-        5. no users/permissions management, as permissions are consistent with your login user
+    ![image info](./images/Slide1.png)
+    ![image info](./images/Slide2.png)
 
 - install
 
