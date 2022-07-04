@@ -29,8 +29,8 @@
 
 - how
 
-    ![image info](./images/Slide1.png)
-    ![image info](./images/Slide2.png)
+    ![image info](./images/design/Slide1.png)
+    ![image info](./images/design/Slide2.png)
 
 - install
 
