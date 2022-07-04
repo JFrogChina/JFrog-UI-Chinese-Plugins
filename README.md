@@ -28,7 +28,8 @@
                 https://www.jfrog.com/jira/projects/JUX/issues/JUX-35
 
 
-    ![image info](./images/art.png)
+    ![image info](./images/Slide1.png)
+    ![image info](./images/Slide1.png)
 
 - how
 
