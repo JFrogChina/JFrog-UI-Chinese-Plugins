@@ -66,11 +66,12 @@
                 git clone https://github.com/kyle11235/jfrog-ui-plugins
                 vi ./jfrog-ui-plugins/index.html
                 
-                efer to index-7.41.12.html in this github repo to make sure position correct
+                refer to index.html in this github repo to make sure position correct
 
         3. cp will overwrite
         
                 kubectl cp ./jfrog-ui-plugins/index.html artifactory/artifactory-0:/opt/jfrog/artifactory/app/frontend/bin/client/dist
+                
                 kubectl cp ./jfrog-ui-plugins/plugins artifactory/artifactory-0:/opt/jfrog/artifactory/app/frontend/bin/client/dist
 
 - plugins list
