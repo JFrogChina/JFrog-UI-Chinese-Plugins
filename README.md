@@ -38,7 +38,7 @@
         
                 e.g. /opt/jfrog/artifactory/app/frontend/bin/client/dist/plugins
 
-        2. edit Artifactory's frontend's index.html, include plugins.js
+        2. update Artifactory's frontend's index.html, include plugins.js
         
                 e.g. download /opt/jfrog/artifactory/app/frontend/bin/client/dist/index.html
                 edit index.html, add below links
@@ -49,7 +49,30 @@
                 refer to index.html in this github repo to make sure position correct
 
         3. then upload index.html back to server
+
+- install (for k8s pod)
+
+        1. ssh
         
+                kubectl get pods -n artifactory
+                kubectl exec --stdin --tty artifactory-0 -n artifactory -- /bin/bash
+                cd /opt/jfrog/artifactory/app/frontend/bin/client/dist
+                mv index.html index.html.bak
+                cat index.html.bak
+                exit
+
+        2. update according to index.html.bak
+        
+                git clone https://github.com/kyle11235/jfrog-ui-plugins
+                vi ./jfrog-ui-plugins/index.html
+                
+                efer to index-7.41.12.html in this github repo to make sure position correct
+
+        3. cp will overwrite
+        
+                kubectl cp ./jfrog-ui-plugins/index.html artifactory/artifactory-0:/opt/jfrog/artifactory/app/frontend/bin/client/dist
+                kubectl cp ./jfrog-ui-plugins/plugins artifactory/artifactory-0:/opt/jfrog/artifactory/app/frontend/bin/client/dist
+
 - plugins list
 
         1. login Artifactory
