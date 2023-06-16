@@ -1,0 +1,37 @@
+{
+    "violation_id": "1390899732273926144",
+    "description": "Alibaba fastjson contains an unspecified flaw related to autoType restrictions. This may allow a context-dependent attacker to bypass the restriction to deserialize user-supplied objects and potentially execute arbitrary code.",
+    "summary": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+    "severity": "High",
+    "type": "Security",
+    "provider": "JFrog",
+    "infected_components": [
+        "gav://com.alibaba:fastjson:1.2.24"
+    ],
+    "infected_versions": [
+        "≤ 1.2.68"
+    ],
+    "fix_versions": [
+        "1.2.70",
+        "1.2.69"
+    ],
+    "created": "2021-05-08T13:21:52+08:00",
+    "watch_name": "xray-project-repo-maven-central-remote",
+    "matched_policies": [
+        {
+            "policy": "xray-project-repo-security-maven-central-remote",
+            "rule": "xray-project-repo-security-maven-central-remote",
+            "is_blocking": true
+        }
+    ],
+    "issue_id": "XRAY-100357",
+    "properties": [
+        {
+            "cvss_v2": "9.3/AV:N/AC:M/Au:N/C:C/I:C/A:C",
+            "cvss_v3": "9.8/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+    ],
+    "impacted_artifacts": [
+        "default/xray-org-maven-central-remote-cache/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar"
+    ]
+}

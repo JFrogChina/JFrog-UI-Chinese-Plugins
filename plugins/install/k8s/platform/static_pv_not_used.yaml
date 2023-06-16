@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv01
+  labels:
+    name: artifactory
+spec:
+  nfs:
+    path: /data/shared1
+    server: 172.17.57.60
+  accessModes: ["ReadWriteMany","ReadWriteOnce"]
+  capacity:
+    storage: 200Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv02
+  labels:
+    name: artifactory
+spec:
+  nfs:
+    path: /data/shared2
+    server: 172.17.57.60
+  accessModes: ["ReadWriteMany","ReadWriteOnce"]
+  capacity:
+    storage: 200Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv03
+  labels:
+    name: artifactory
+spec:
+  nfs:
+    path: /data/shared3
+    server: 172.17.57.60
+  accessModes: ["ReadWriteMany","ReadWriteOnce"]
+  capacity:
+    storage: 200Gi

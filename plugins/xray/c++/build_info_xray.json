@@ -1,0 +1,35 @@
+{
+  "name": "cpp_build",
+  "number": "3",
+  "agent": {
+    "name": "jfrog-cli-go",
+    "version": "2.16.2"
+  },
+  "buildAgent": {
+    "name": "GENERIC",
+    "version": "2.16.2"
+  },
+  "modules": [
+    {
+      "type": "cpp",
+      "properties": {},
+      "id": "cpp_build",
+      "dependencies": [
+        {
+          "id": "zlib:1.2.0",
+          "sha1": "6233b8f5b55f08fede2b9bc131fc1df75a525107",
+          "md5": "619b33d02573b83aa0ed22d417ebd8e0",
+          "type": "cpp"
+        },
+        {
+          "id": "poco:1.8.0",
+          "sha1": "a50c6b63ccb9fc95cc39fb6827828adc33cbd707",
+          "md5": "8189f8e00a311e47403fec914e0358e5",
+          "type": "cpp"
+        }
+      ]
+    }
+  ],
+  "started": "2023-01-09T16:01:24.257+0800",
+  "artifactoryPrincipal": "kyle"
+}

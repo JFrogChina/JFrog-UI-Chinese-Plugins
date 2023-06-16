@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "aql": {
+        "items.find": {
+          "repo": "app1-generic-prod-local",
+          
+          "name": {"$match" : "*.nsp"}
+        }
+      },
+      "target": "/Users/kyle/Downloads/mj/2-download/"
+    }
+  ]
+}

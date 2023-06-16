@@ -1,0 +1,35 @@
+p2p:
+    peer:
+       ## Mandatory field
+       ## Artifactory URL on which the Tracker was enabled.
+
+       ## kyle, ip of edge node
+       trackerUrl: "8.140.179.156:8852"
+
+       ## Mandatory field
+       ## Artifactory URL on which the Tracker was enabled.
+       ## Alternately, you can set the accessRootCertificate
+
+       ## kyle, ip of edge node
+       trackerInitialConnectionUrl: "8.140.179.156:8850"
+
+       ## Mandatory field
+       ## Path to the access root certificate. 
+       ## Alternately, you can set the trackerInitialConnectionUrl
+       #accessRootCertificate: "/opt/var/etc/root.crt"
+
+       ## Mandatory field
+       ## P2P Join key value generated in the Artifactory node 
+       ## and used for establishing a connection between the Peers to the Tracker
+
+       ## kyle, p2p access token from edge node
+       joinKey: "9fc22fc3da40d32fe5b7d95705270cf3"
+
+       ## Peer application log level. Supported levels: info | debug | trace.
+       logLevel: trace
+
+       ## kyle, ip of peer
+       selfHttpAddress: 47.93.99.107:8089
+       selfGrpcAddress: 47.93.99.107:8088
+       ## Enables pprof
+       http: true      

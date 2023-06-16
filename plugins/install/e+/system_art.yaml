@@ -1,0 +1,10 @@
+replicator:
+    enabled: true
+    p2p:
+        tracker:
+            enabled: true
+            selfAddress: "art_public_ip:8852" 
+            internalPort: 8851
+            insecurePort: 8850
+            artifactoryUrl: "http://art_public_ip:8081/artifactory" 
+            accessUrl: "http://art_public_ip:8040/access"

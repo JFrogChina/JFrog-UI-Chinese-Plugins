@@ -1,0 +1,26 @@
+{
+    "name": "xray-project-repo-security-maven-central-remote",
+    "type": "security",
+    "author": "admin",
+    "rules": [
+        {
+            "name": "xray-project-repo-security-maven-central-remote",
+            "priority": 1,
+            "actions": {
+                "fail_build": true,
+                "block_download": {
+                    "unscanned": false,
+                    "active": true
+                }
+            },
+            "criteria": {
+                "cvss_range": {
+                    "from": 9,
+                    "to": 10
+                }
+            }
+        }
+    ],
+    "created": "2021-05-08T11:20:23.976+08:00",
+    "modified": "2021-05-08T12:45:58.554+08:00"
+}

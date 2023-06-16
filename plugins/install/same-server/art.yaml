@@ -1,0 +1,9 @@
+artifactory:
+    port: 9081
+router:
+    entrypoints:
+        externalPort: 9082
+        internalPort: 9046
+        grpcPort: 9047
+        traefikApiPort: 9049
+

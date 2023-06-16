@@ -1,0 +1,553 @@
+{
+  "summary" : {
+    "message" : "Build xray-demo number 24 was scanned by Xray and 1 Alerts were generated",
+    "total_alerts" : 19,
+    "fail_build" : true,
+    "more_details_url" : "https://demo.jfrogchina.com/ui/builds/xray-demo/24/1618222903193"
+  },
+  "alerts" : [ {
+    "created" : "2021-04-12T18:22:12.311627184+08:00",
+    "issues" : [ {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2019-02-21T17:35:06.617+08:00",
+      "summary" : "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+      "description" : "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+      "cve" : "CVE-2017-18349",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "fastjson-1.2.24.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "1b4ebbb73676b7048966f5165a9310fb81c761eeab9eb2e2d361b70ff9450c66",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "com.alibaba:fastjson:1.2.24"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2020-06-11T02:15:13.447+08:00",
+      "summary" : "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+      "description" : "Alibaba fastjson contains an unspecified flaw related to autoType restrictions. This may allow a context-dependent attacker to bypass the restriction to deserialize user-supplied objects and potentially execute arbitrary code.",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "fastjson-1.2.24.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "1b4ebbb73676b7048966f5165a9310fb81c761eeab9eb2e2d361b70ff9450c66",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "com.alibaba:fastjson:1.2.24"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "Custom",
+      "created" : "2021-02-26T14:05:05.637+08:00",
+      "summary" : "CNVD-2019-32498",
+      "description" : "Fastjson是一款开源JSON解析库，它可以解析JSON格式的字符串，支持将Java Bean序列化为JSON字符串，也可以从JSON字符串反序列化到JavaBean。\n\nFastjson存在远程代码执行漏洞，攻击者可利用该漏洞远程执行恶意代码来入侵服务器。",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "fastjson-1.2.24.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "1b4ebbb73676b7048966f5165a9310fb81c761eeab9eb2e2d361b70ff9450c66",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "com.alibaba:fastjson:1.2.24"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2020-06-08T20:58:57.182+08:00",
+      "summary" : "A very important custom issue",
+      "description" : "A very important custom issue",
+      "cve" : "CVE-9000-1000386",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "hsqldb-1.8.0.10.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "b04b3b3ac295d497c87230eeb4f888327a5a15b9c3c1567db202a51d83ac9e41",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "hsqldb:hsqldb:1.8.0.10"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "Custom",
+      "created" : "2021-02-26T16:12:34.891+08:00",
+      "summary" : "aaaaaffff",
+      "description" : "sdfsdfsdf",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "aopalliance-1.0.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "0addec670fedcd3f113c5c8091d783280d23f75e3acb841b61a9cdb079376a08",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "aopalliance:aopalliance:1.0"
+        } ]
+      } ]
+    }, {
+      "severity" : "Low",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2019-08-28T03:13:50.088+08:00",
+      "summary" : "Apache Commons IO io/FileUtils.java Unsafe Directory Creation Weakness",
+      "description" : "Apache Commons IO contains a flaw in io/FileUtils.java that is due to the program creating directories in an unsafe manner in the window that exists between exists() and mkdirs() invocations. This may allow a remote attacker to potentially write data into an untrusted location.",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "commons-io-1.4.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "a7f713593007813bf07d19bd1df9f81c86c0719e9a0bb2ef1b98b78313fc940d",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "commons-io:commons-io:1.4"
+        } ]
+      } ]
+    }, {
+      "severity" : "Medium",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2019-05-02T22:45:39.455+08:00",
+      "summary" : "Apache Maven org.apache.maven.shared.utils.Expand Expand.java extractFile() Function Traversal Remote File Write",
+      "description" : "Apache Maven contains a flaw in org.apache.maven.shared.utils.Expand that allows traversing outside of a restricted path. The issue is due to the extractFile() function in Expand.java not properly sanitizing user input, specifically path traversal style attacks (e.g. '../'). With a specially crafted request, a remote attacker can write arbitrary files.",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "plexus-utils-1.5.1.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "72582f8ba285601fa753ceeda73ff3cbd94c6e78f52ec611621eaa0186165452",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.codehaus.plexus:plexus-utils:1.5.1"
+        } ]
+      } ]
+    }, {
+      "severity" : "Medium",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2017-07-05T19:31:13.496+08:00",
+      "summary" : "SpringSource Spring Framework 2.5.x before 2.5.6.SEC02, 2.5.7 before 2.5.7.SR01, and 3.0.x before 3.0.3 allows remote attackers to execute arbitrary code via an HTTP request containing class.classLoader.URLs[0]=jar: followed by a URL of a crafted .jar file.",
+      "description" : "SpringSource Spring Framework 2.5.x before 2.5.6.SEC02, 2.5.7 before 2.5.7.SR01, and 3.0.x before 3.0.3 allows remote attackers to execute arbitrary code via an HTTP request containing class.classLoader.URLs[0]=jar: followed by a URL of a crafted .jar file.",
+      "cve" : "CVE-2010-1622",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "spring-beans-2.5.6.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "d33246bb33527685d04f23536ebf91b06ad7fa8b371fcbeb12f01523eb610104",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.springframework:spring-beans:2.5.6"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2019-08-20T18:53:38.45+08:00",
+      "summary" : "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+      "description" : "Alibaba fastjson contains an unspecified flaw that is triggered when handling a specially crafted packet. This may allow a remote attacker to execute arbitrary code.",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "fastjson-1.2.24.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "1b4ebbb73676b7048966f5165a9310fb81c761eeab9eb2e2d361b70ff9450c66",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "com.alibaba:fastjson:1.2.24"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2019-07-31T15:47:23.576+08:00",
+      "summary" : "FastJSON remote code execution 0day vulnerability.",
+      "description" : "With this 0day vulnerability, a malicious attacker can construct an attack request to bypass the FastJSON blacklist policy. For example, an attacker remotely causes a server to execute a specified command through a carefully crafted request (the calculator program runs successfully in the following example).",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "fastjson-1.2.24.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "1b4ebbb73676b7048966f5165a9310fb81c761eeab9eb2e2d361b70ff9450c66",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "com.alibaba:fastjson:1.2.24"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "other",
+      "provider" : "Custom",
+      "created" : "2020-07-03T10:10:16.706+08:00",
+      "summary" : "test",
+      "description" : "test",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "fastjson-1.2.24.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "1b4ebbb73676b7048966f5165a9310fb81c761eeab9eb2e2d361b70ff9450c66",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "com.alibaba:fastjson:1.2.24"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2017-07-05T19:31:13.178+08:00",
+      "summary" : "VMware SpringSource Spring Framework before 2.5.6.SEC03, 2.5.7.SR023, and 3.x before 3.0.6, when a container supports Expression Language (EL), evaluates EL expressions in tags twice, which allows remote attackers to obtain sensitive information via a (1) name attribute in a (a) spring:hasBindErrors tag; (2) path attribute in a (b) spring:bind or (c) spring:nestedpath tag; (3) arguments, (4) code, (5) text, (6) var, (7) scope, or (8) message attribute in a (d) spring:message or (e) spring:theme tag; or (9) var, (10) scope, or (11) value attribute in a (f) spring:transform tag, aka \"Expression Language Injection.\"",
+      "description" : "VMware SpringSource Spring Framework before 2.5.6.SEC03, 2.5.7.SR023, and 3.x before 3.0.6, when a container supports Expression Language (EL), evaluates EL expressions in tags twice, which allows remote attackers to obtain sensitive information via a (1) name attribute in a (a) spring:hasBindErrors tag; (2) path attribute in a (b) spring:bind or (c) spring:nestedpath tag; (3) arguments, (4) code, (5) text, (6) var, (7) scope, or (8) message attribute in a (d) spring:message or (e) spring:theme tag; or (9) var, (10) scope, or (11) value attribute in a (f) spring:transform tag, aka \"Expression Language Injection.\"",
+      "cve" : "CVE-2011-2730",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "spring-core-2.5.6.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "cf37656069488043c47f49a5520bb06d6879b63ef6044abb200c51a7ff2d6c49",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.springframework:spring-core:2.5.6"
+        } ]
+      } ]
+    }, {
+      "severity" : "Medium",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2018-07-12T15:10:39.7+08:00",
+      "summary" : "Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, provide client-side support for multipart requests. When Spring MVC or Spring WebFlux server application (server A) receives input from a remote client, and then uses that input to make a multipart request to another server (server B), it can be exposed to an attack, where an extra multipart is inserted in the content of the request from server A, causing server B to use the wrong value for a part it expects. This could to lead privilege escalation, for example, if the part content represents a username or user roles.",
+      "description" : "Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, provide client-side support for multipart requests. When Spring MVC or Spring WebFlux server application (server A) receives input from a remote client, and then uses that input to make a multipart request to another server (server B), it can be exposed to an attack, where an extra multipart is inserted in the content of the request from server A, causing server B to use the wrong value for a part it expects. This could to lead privilege escalation, for example, if the part content represents a username or user roles.",
+      "cve" : "CVE-2018-1272",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "spring-core-2.5.6.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "cf37656069488043c47f49a5520bb06d6879b63ef6044abb200c51a7ff2d6c49",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.springframework:spring-core:2.5.6"
+        } ]
+      } ]
+    }, {
+      "severity" : "Medium",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2018-01-30T16:46:41.791+08:00",
+      "summary" : "If a user of Apache Commons Email (typically an application programmer) passes unvalidated input as the so-called \"Bounce Address\", and that input contains line-breaks, then the email details (recipients, contents, etc.) might be manipulated. Mitigation: Users should upgrade to Commons-Email 1.5. You can mitigate this vulnerability for older versions of Commons Email by stripping line-breaks from data, that will be passed to Email.setBounceAddress(String).",
+      "description" : "If a user of Apache Commons Email (typically an application programmer) passes unvalidated input as the so-called \"Bounce Address\", and that input contains line-breaks, then the email details (recipients, contents, etc.) might be manipulated. Mitigation: Users should upgrade to Commons-Email 1.5. You can mitigate this vulnerability for older versions of Commons Email by stripping line-breaks from data, that will be passed to Email.setBounceAddress(String).",
+      "cve" : "CVE-2018-1294",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "commons-email-1.1.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "78da962833d83a9df219d07b6c8c60115a0146a7314f8e44df3efdcf15792eaa",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.apache.commons:commons-email:1.1"
+        } ]
+      } ]
+    }, {
+      "severity" : "Medium",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2017-08-17T21:57:52.155+08:00",
+      "summary" : "When a call-site passes a subject for an email that contains line-breaks in Apache Commons Email 1.0 through 1.4, the caller can add arbitrary SMTP headers.",
+      "description" : "When a call-site passes a subject for an email that contains line-breaks in Apache Commons Email 1.0 through 1.4, the caller can add arbitrary SMTP headers.",
+      "cve" : "CVE-2017-9801",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "commons-email-1.1.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "78da962833d83a9df219d07b6c8c60115a0146a7314f8e44df3efdcf15792eaa",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.apache.commons:commons-email:1.1"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2019-09-09T21:46:11.256+08:00",
+      "summary" : "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+      "description" : "Alibaba fastjson contains a flaw in /parser/JSONLexerBase.java that is triggered during the handling of a specially crafted request packet. This may allow a remote attacker to cause a denial of service.",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "fastjson-1.2.24.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "1b4ebbb73676b7048966f5165a9310fb81c761eeab9eb2e2d361b70ff9450c66",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "com.alibaba:fastjson:1.2.24"
+        } ]
+      } ]
+    }, {
+      "severity" : "Medium",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2018-11-22T21:39:14.353+08:00",
+      "summary" : "Algorithmic complexity vulnerability in the java.util.regex.Pattern.compile method in Sun Java Development Kit (JDK) before 1.6, when used with spring.jar in SpringSource Spring Framework 1.1.0 through 2.5.6 and 3.0.0.M1 through 3.0.0.M2 and dm Server 1.0.0 through 1.0.2, allows remote attackers to cause a denial of service (CPU consumption) via serializable data with a long regex string containing multiple optional groups, a related issue to CVE-2004-2540.",
+      "description" : "Algorithmic complexity vulnerability in the java.util.regex.Pattern.compile method in Sun Java Development Kit (JDK) before 1.6, when used with spring.jar in SpringSource Spring Framework 1.1.0 through 2.5.6 and 3.0.0.M1 through 3.0.0.M2 and dm Server 1.0.0 through 1.0.2, allows remote attackers to cause a denial of service (CPU consumption) via serializable data with a long regex string containing multiple optional groups, a related issue to CVE-2004-2540.",
+      "cve" : "CVE-2009-1190",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "spring-core-2.5.6.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "cf37656069488043c47f49a5520bb06d6879b63ef6044abb200c51a7ff2d6c49",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.springframework:spring-core:2.5.6"
+        } ]
+      } ]
+    }, {
+      "severity" : "Low",
+      "type" : "security",
+      "provider" : "Custom",
+      "created" : "2020-06-30T10:36:26.729+08:00",
+      "summary" : "sdfff",
+      "description" : "11",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "mail-1.4.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "96868f82264ebd9b7d41f04d78cbe87ab75d68a7bbf8edfb82416aabe9b54b6c",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "javax.mail:mail:1.4"
+        } ]
+      } ]
+    }, {
+      "severity" : "High",
+      "type" : "security",
+      "provider" : "JFrog",
+      "created" : "2019-06-10T16:42:32.044+08:00",
+      "summary" : "Plexus-utils before 3.0.16 is vulnerable to command injection because it does not correctly process the contents of double quoted strings.",
+      "description" : "Plexus-utils before 3.0.16 is vulnerable to command injection because it does not correctly process the contents of double quoted strings.",
+      "cve" : "CVE-2017-1000487",
+      "impacted_artifacts" : [ {
+        "name" : "xray-demo",
+        "path" : "default/builds/",
+        "sha256" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "sha1" : "8444701e05577c7883a5df0c71de752685005c5e",
+        "depth" : 0,
+        "pkg_type" : "Build",
+        "parent_sha" : "22750ccfed78547038f33db41fd8e36cece500d43706df121a24f677efefdc0d",
+        "display_name" : "xray-demo:24",
+        "infected_files" : [ {
+          "name" : "plexus-utils-1.5.1.jar",
+          "path" : "WEB-INF/lib/",
+          "sha256" : "72582f8ba285601fa753ceeda73ff3cbd94c6e78f52ec611621eaa0186165452",
+          "depth" : 0,
+          "pkg_type" : "Maven",
+          "parent_sha" : "35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1",
+          "display_name" : "org.codehaus.plexus:plexus-utils:1.5.1"
+        } ]
+      } ]
+    } ],
+    "top_severity" : "High",
+    "watch_name" : "build-xray-demo"
+  } ],
+  "licenses" : [ {
+    "name" : "Unknown",
+    "components" : [ "generic://sha256:a98a61382c23f67a1d28f5ae68b60988859ac5b306193d6acf97417b1e46e4b4/multi1-4.7.jar", "generic://sha256:7181f300a5abb69ce5c1f6582e2fbabea0d29c2bfa4f5796da36a4ea4392954b/multi1-4.7-sources.jar", "generic://sha256:928afe449b67b10ac443632aa620d1d8e49397cdf0268ff4f65e058be993633a/multi1-4.7-tests.jar", "generic://sha256:a512d57996f7f4d8d9b9ab82b4259805c99bf77bc7c113c2b86795157c9f3e70/multi2-4.7.jar", "generic://sha256:35bd95c15722d4c589245587500a67f266e7e80eea813c3ac4dc921879876cf1/multi3-4.7.war", "gav://javax.servlet.jsp:jsp-api:2.1" ],
+    "full_name" : "Unknown license",
+    "more_info_url" : [ "Unknown link" ]
+  }, {
+    "name" : "CDDL-1.0",
+    "components" : [ "gav://javax.activation:activation:1.1", "gav://javax.mail:mail:1.4" ],
+    "full_name" : "Common Development and Distribution License (CDDL)\n            1.0",
+    "more_info_url" : [ "http://www.opensource.org/licenses/cddl1", "https://spdx.org/licenses/CDDL-1.0.html", "https://spdx.org/licenses/CDDL-1.0", "http://www.opensource.org/licenses/cddl1.php" ]
+  }, {
+    "name" : "Public Domain",
+    "components" : [ "gav://aopalliance:aopalliance:1.0" ],
+    "full_name" : "Public Domain",
+    "more_info_url" : [ "http://creativecommons.org/licenses/publicdomain/" ]
+  }, {
+    "name" : "Apache-2.0",
+    "components" : [ "gav://org.springframework:spring-aop:2.5.6", "gav://org.springframework:spring-beans:2.5.6", "gav://org.testng:testng:5.9", "gav://commons-logging:commons-logging:1.1.1", "gav://org.codehaus.plexus:plexus-utils:1.5.1", "gav://com.alibaba:fastjson:1.2.24", "gav://org.apache.commons:commons-email:1.1", "gav://org.springframework:spring-core:2.5.6", "gav://commons-io:commons-io:1.4" ],
+    "full_name" : "The Apache Software License, Version 2.0",
+    "more_info_url" : [ "http://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt", "https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt", "http://licenses.nuget.org/Apache-2.0", "https://licenses.nuget.org/Apache-2.0", "http://www.apache.org/licenses/LICENSE-2.0", "https://spdx.org/licenses/Apache-2.0.html", "https://spdx.org/licenses/Apache-2.0", "http://www.opensource.org/licenses/apache2.0.php", "http://www.opensource.org/licenses/Apache-2.0" ]
+  }, {
+    "name" : "HSQLDB",
+    "components" : [ "gav://org.hsqldb:hsqldb:1.8.0.10" ],
+    "full_name" : "HSQLDB License",
+    "more_info_url" : [ "http://hsqldb.org/web/hsqlLicense.html" ]
+  }, {
+    "name" : "MIT",
+    "components" : [ "gav://org.zenframework.z8.dependencies.servlet:servlet-api-2.5:2.0" ],
+    "full_name" : "The MIT License",
+    "more_info_url" : [ "https://spdx.org/licenses/MIT.html", "https://spdx.org/licenses/MIT", "http://www.opensource.org/licenses/mit-license.php", "http://www.opensource.org/licenses/MIT" ]
+  }, {
+    "name" : "CPAL-1.0",
+    "components" : [ "gav://junit:junit:3.8.1" ],
+    "full_name" : "Common Public Attribution License Version 1.0 (CPAL)",
+    "more_info_url" : [ "http://www.opensource.org/licenses/CPAL-1.0", "https://spdx.org/licenses/CPAL-1.0.html", "https://spdx.org/licenses/CPAL-1.0", "http://www.opensource.org/licenses/cpal_1.0" ]
+  } ]
+}

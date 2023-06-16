@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "aql": {
+        "items.find": {
+          "$or":[
+            {
+                "$and":[
+                    {
+                      "repo":"app1-generic-dev-local",
+                      "path": {"$match" : "A/B/C/D"},
+                      "name": {"$match" : "*.zip"}
+                    }
+                 ]
+            },
+            {
+                "$and":[
+                    {
+                      "repo":"app1-generic-dev-local",
+                      "path": {"$match" : "A/C/D"},
+                      "name": {"$match" : "*.zip"}
+                    }
+                 ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+    "artifacts" : {
+      "updated" : [ ],
+      "unchanged" : [ {
+        "name" : "m1.zip",
+        "diffName" : "m1.zip",
+        "module" : "m1",
+        "type" : "zip",
+        "sha1" : "96689757de8c6ca74f723f02dbf12143c69b1022",
+        "md5" : "4d7b381f3609765535499263a5c63d41"
+      }, {
+        "name" : "1.zip",
+        "diffName" : "1.zip",
+        "module" : "cli-ant-build",
+        "type" : "zip",
+        "sha1" : "7216685c5098e57bea867c2420b1999d71479082",
+        "md5" : "4bc1296c3bac8d6c001f0def629c021e"
+      }, {
+        "name" : "2.zip",
+        "diffName" : "2.zip",
+        "module" : "cli-ant-build",
+        "type" : "zip",
+        "sha1" : "24a371681121270dd95305c6a80d30fc1ad30f15",
+        "md5" : "3aa2db9c1c058f25ba577518b018ed5b"
+      } ],
+      "removed" : [ ],
+      "new" : [ ]
+    },
+    "dependencies" : {
+      "updated" : [ {
+        "module" : "cli-ant-build",
+        "sha1" : "30e4288804ea0797ff5e6a724ec6585a4dc1cf80",
+        "md5" : "d403648292bb2c1853792636c72cb41a",
+        "id" : "dependency2_1.0.0.txt",
+        "diffId" : "dependency2_1.0.0.txt"
+      } ],
+      "unchanged" : [ {
+        "module" : "cli-ant-build",
+        "sha1" : "5d668feb844a9b8ffae62d848b0af677dca40692",
+        "md5" : "dac9b501ee35612365ea51b8370faeb7",
+        "id" : "2.jar",
+        "diffId" : "2.jar"
+      }, {
+        "module" : "cli-ant-build",
+        "sha1" : "5403456ae4a024f4ef1160d34fc6affad55322d0",
+        "md5" : "aefc844e6a0e1771f7774dffd0ed271f",
+        "id" : "dependency1_1.0.0.txt",
+        "diffId" : "dependency1_1.0.0.txt"
+      }, {
+        "module" : "cli-ant-build",
+        "sha1" : "a2b82688715ee16d874d90229d204daf3efcac8e",
+        "md5" : "036e7cdd77ba14322ff3a38fc4e1cfbe",
+        "id" : "fastjson-1.2.24.jar",
+        "diffId" : "fastjson-1.2.24.jar"
+      } ],
+      "removed" : [ {
+        "module" : "cli-ant-build",
+        "diffId" : "dependency3_1.0.0.txt"
+      } ],
+      "new" : [ {
+        "module" : "cli-ant-build",
+        "sha1" : "d9fa51871f92610d40db59cf73b8f04e33ae5096",
+        "md5" : "3723fd96dce9ca17c92cf001309e3d31",
+        "id" : "dependency4_1.0.0.txt"
+      } ]
+    },
+    "properties" : {
+      "updated" : [ ],
+      "unchanged" : [ ],
+      "removed" : [ ],
+      "new" : [ ]
+    }
+}

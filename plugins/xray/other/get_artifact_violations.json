@@ -1,0 +1,1130 @@
+{
+    "total_violations": 75,
+    "violations": [
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:54+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:0608f3f87cddd36e297587cdc2ba3c4c5d1ff5576eb7e72202a8ecdac3078e44%2Fmulti3-4.7-20210405.163556-11.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163556-11.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:54+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:0608f3f87cddd36e297587cdc2ba3c4c5d1ff5576eb7e72202a8ecdac3078e44%2Fmulti3-4.7-20210405.163556-11.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163556-11.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:54+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:0608f3f87cddd36e297587cdc2ba3c4c5d1ff5576eb7e72202a8ecdac3078e44%2Fmulti3-4.7-20210405.163556-11.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163556-11.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:54+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:0608f3f87cddd36e297587cdc2ba3c4c5d1ff5576eb7e72202a8ecdac3078e44%2Fmulti3-4.7-20210405.163556-11.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163556-11.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:54+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:0608f3f87cddd36e297587cdc2ba3c4c5d1ff5576eb7e72202a8ecdac3078e44%2Fmulti3-4.7-20210405.163556-11.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163556-11.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:59+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:3dd8bc3b97ab2a665826fae629b9b30572ce32b3c589fea7080979ca645b19bb%2Fmulti3-4.7-20210405.164349-14.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164349-14.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:59+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:3dd8bc3b97ab2a665826fae629b9b30572ce32b3c589fea7080979ca645b19bb%2Fmulti3-4.7-20210405.164349-14.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164349-14.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:59+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:3dd8bc3b97ab2a665826fae629b9b30572ce32b3c589fea7080979ca645b19bb%2Fmulti3-4.7-20210405.164349-14.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164349-14.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:59+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:3dd8bc3b97ab2a665826fae629b9b30572ce32b3c589fea7080979ca645b19bb%2Fmulti3-4.7-20210405.164349-14.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164349-14.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:50:59+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:3dd8bc3b97ab2a665826fae629b9b30572ce32b3c589fea7080979ca645b19bb%2Fmulti3-4.7-20210405.164349-14.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164349-14.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:00+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:c2c6a51647f3fd5a9291bf6f0ca8a72672e7ee41c3c5f8556153dede227e7aa8%2Fmulti3-4.7-20210405.163958-12.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163958-12.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:00+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:c2c6a51647f3fd5a9291bf6f0ca8a72672e7ee41c3c5f8556153dede227e7aa8%2Fmulti3-4.7-20210405.163958-12.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163958-12.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:00+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:c2c6a51647f3fd5a9291bf6f0ca8a72672e7ee41c3c5f8556153dede227e7aa8%2Fmulti3-4.7-20210405.163958-12.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163958-12.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:00+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:c2c6a51647f3fd5a9291bf6f0ca8a72672e7ee41c3c5f8556153dede227e7aa8%2Fmulti3-4.7-20210405.163958-12.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163958-12.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:00+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:c2c6a51647f3fd5a9291bf6f0ca8a72672e7ee41c3c5f8556153dede227e7aa8%2Fmulti3-4.7-20210405.163958-12.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.163958-12.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:08+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:fb84929b48b1c7d816099fdbf283194009867ff3464d721610e5a05ed759478b%2Fmulti3-4.7-20210314.144737-9.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.144737-9.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:08+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:fb84929b48b1c7d816099fdbf283194009867ff3464d721610e5a05ed759478b%2Fmulti3-4.7-20210314.144737-9.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.144737-9.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:08+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:fb84929b48b1c7d816099fdbf283194009867ff3464d721610e5a05ed759478b%2Fmulti3-4.7-20210314.144737-9.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.144737-9.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:08+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:fb84929b48b1c7d816099fdbf283194009867ff3464d721610e5a05ed759478b%2Fmulti3-4.7-20210314.144737-9.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.144737-9.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:08+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:fb84929b48b1c7d816099fdbf283194009867ff3464d721610e5a05ed759478b%2Fmulti3-4.7-20210314.144737-9.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.144737-9.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:09+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:c74213b72f77d2fedcaa56b89f276b60f18bdc9d25a89a1a1ec64c68fa52d301%2Fmulti3-4.7-20210508.061255-18.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061255-18.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:09+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:c74213b72f77d2fedcaa56b89f276b60f18bdc9d25a89a1a1ec64c68fa52d301%2Fmulti3-4.7-20210508.061255-18.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061255-18.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:c74213b72f77d2fedcaa56b89f276b60f18bdc9d25a89a1a1ec64c68fa52d301%2Fmulti3-4.7-20210508.061255-18.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061255-18.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:c74213b72f77d2fedcaa56b89f276b60f18bdc9d25a89a1a1ec64c68fa52d301%2Fmulti3-4.7-20210508.061255-18.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061255-18.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:1657d0330b896a1f326764e36f1259b8ebabe0e53246497d6d87c082f590881d%2Fmulti3-4.7-20210508.061635-20.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061635-20.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:c74213b72f77d2fedcaa56b89f276b60f18bdc9d25a89a1a1ec64c68fa52d301%2Fmulti3-4.7-20210508.061255-18.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061255-18.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:1657d0330b896a1f326764e36f1259b8ebabe0e53246497d6d87c082f590881d%2Fmulti3-4.7-20210508.061635-20.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061635-20.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:1657d0330b896a1f326764e36f1259b8ebabe0e53246497d6d87c082f590881d%2Fmulti3-4.7-20210508.061635-20.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061635-20.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:1657d0330b896a1f326764e36f1259b8ebabe0e53246497d6d87c082f590881d%2Fmulti3-4.7-20210508.061635-20.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061635-20.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:10+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:1657d0330b896a1f326764e36f1259b8ebabe0e53246497d6d87c082f590881d%2Fmulti3-4.7-20210508.061635-20.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061635-20.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:11+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:3e5802986bd4b7373b897010310003793e455c67119fef09903e82f3a2bb20c2%2Fmulti3-4.7-20210508.062335-21.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.062335-21.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:11+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:3e5802986bd4b7373b897010310003793e455c67119fef09903e82f3a2bb20c2%2Fmulti3-4.7-20210508.062335-21.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.062335-21.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:11+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:3e5802986bd4b7373b897010310003793e455c67119fef09903e82f3a2bb20c2%2Fmulti3-4.7-20210508.062335-21.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.062335-21.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:11+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:3e5802986bd4b7373b897010310003793e455c67119fef09903e82f3a2bb20c2%2Fmulti3-4.7-20210508.062335-21.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.062335-21.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:11+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:3e5802986bd4b7373b897010310003793e455c67119fef09903e82f3a2bb20c2%2Fmulti3-4.7-20210508.062335-21.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.062335-21.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:12+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:da10f300feebbd7174684a7361e794f39d241fb5156aaf4ee4fcae7037ea7600%2Fmulti3-4.7-20210508.061425-19.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061425-19.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:12+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:da10f300feebbd7174684a7361e794f39d241fb5156aaf4ee4fcae7037ea7600%2Fmulti3-4.7-20210508.061425-19.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061425-19.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:12+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:da10f300feebbd7174684a7361e794f39d241fb5156aaf4ee4fcae7037ea7600%2Fmulti3-4.7-20210508.061425-19.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061425-19.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:12+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:da10f300feebbd7174684a7361e794f39d241fb5156aaf4ee4fcae7037ea7600%2Fmulti3-4.7-20210508.061425-19.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061425-19.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:12+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:da10f300feebbd7174684a7361e794f39d241fb5156aaf4ee4fcae7037ea7600%2Fmulti3-4.7-20210508.061425-19.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.061425-19.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:14+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:a21547804460af4e27ffa9ce4523e8947d7670cc4ddbc1c442861e05dea4afa3%2Fmulti3-4.7-20210508.060543-17.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.060543-17.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:14+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:a21547804460af4e27ffa9ce4523e8947d7670cc4ddbc1c442861e05dea4afa3%2Fmulti3-4.7-20210508.060543-17.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.060543-17.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:14+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:a21547804460af4e27ffa9ce4523e8947d7670cc4ddbc1c442861e05dea4afa3%2Fmulti3-4.7-20210508.060543-17.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.060543-17.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:15+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:a21547804460af4e27ffa9ce4523e8947d7670cc4ddbc1c442861e05dea4afa3%2Fmulti3-4.7-20210508.060543-17.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.060543-17.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:15+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:a21547804460af4e27ffa9ce4523e8947d7670cc4ddbc1c442861e05dea4afa3%2Fmulti3-4.7-20210508.060543-17.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210508.060543-17.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:17+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:358a9f9acafbcadced975ebba8f34157b0c4cc142eeaa9c8c33bcbe76ff4a45c%2Fmulti3-4.7-20210405.164241-13.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164241-13.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:17+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:358a9f9acafbcadced975ebba8f34157b0c4cc142eeaa9c8c33bcbe76ff4a45c%2Fmulti3-4.7-20210405.164241-13.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164241-13.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:18+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:358a9f9acafbcadced975ebba8f34157b0c4cc142eeaa9c8c33bcbe76ff4a45c%2Fmulti3-4.7-20210405.164241-13.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164241-13.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:18+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:358a9f9acafbcadced975ebba8f34157b0c4cc142eeaa9c8c33bcbe76ff4a45c%2Fmulti3-4.7-20210405.164241-13.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164241-13.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:18+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:358a9f9acafbcadced975ebba8f34157b0c4cc142eeaa9c8c33bcbe76ff4a45c%2Fmulti3-4.7-20210405.164241-13.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164241-13.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:20+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:3862c68cc92328651d57a9072befcc6d38bbad21c004ed9d882397fde86253af%2Fmulti3-4.7-20210405.164812-15.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164812-15.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:20+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:3862c68cc92328651d57a9072befcc6d38bbad21c004ed9d882397fde86253af%2Fmulti3-4.7-20210405.164812-15.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164812-15.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:20+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:3862c68cc92328651d57a9072befcc6d38bbad21c004ed9d882397fde86253af%2Fmulti3-4.7-20210405.164812-15.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164812-15.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:20+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:3862c68cc92328651d57a9072befcc6d38bbad21c004ed9d882397fde86253af%2Fmulti3-4.7-20210405.164812-15.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164812-15.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:20+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:3862c68cc92328651d57a9072befcc6d38bbad21c004ed9d882397fde86253af%2Fmulti3-4.7-20210405.164812-15.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.164812-15.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:22+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:0be9b2752178fa1b90ea61861b6c31f9132a715a8a2494a79423ae8a9fe5c30c%2Fmulti3-4.7-20210405.162146-10.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.162146-10.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:22+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:0be9b2752178fa1b90ea61861b6c31f9132a715a8a2494a79423ae8a9fe5c30c%2Fmulti3-4.7-20210405.162146-10.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.162146-10.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:22+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:0be9b2752178fa1b90ea61861b6c31f9132a715a8a2494a79423ae8a9fe5c30c%2Fmulti3-4.7-20210405.162146-10.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.162146-10.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:22+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:0be9b2752178fa1b90ea61861b6c31f9132a715a8a2494a79423ae8a9fe5c30c%2Fmulti3-4.7-20210405.162146-10.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.162146-10.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:22+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:0be9b2752178fa1b90ea61861b6c31f9132a715a8a2494a79423ae8a9fe5c30c%2Fmulti3-4.7-20210405.162146-10.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210405.162146-10.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:25+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:9c0355831ffb43f8fa1b951007a24cf01fd9e5b881d486c78cc64d2076dccd74%2Fmulti3-4.7-20210427.023555-16.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210427.023555-16.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:deda0a206dc5d9ca766c89bb4b838e1cf3882884b170e60eaef260231ff7267e%2Fmulti3-4.7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7/multi3-4.7.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:9c0355831ffb43f8fa1b951007a24cf01fd9e5b881d486c78cc64d2076dccd74%2Fmulti3-4.7-20210427.023555-16.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210427.023555-16.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:9c0355831ffb43f8fa1b951007a24cf01fd9e5b881d486c78cc64d2076dccd74%2Fmulti3-4.7-20210427.023555-16.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210427.023555-16.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:9c0355831ffb43f8fa1b951007a24cf01fd9e5b881d486c78cc64d2076dccd74%2Fmulti3-4.7-20210427.023555-16.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210427.023555-16.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:deda0a206dc5d9ca766c89bb4b838e1cf3882884b170e60eaef260231ff7267e%2Fmulti3-4.7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7/multi3-4.7.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:deda0a206dc5d9ca766c89bb4b838e1cf3882884b170e60eaef260231ff7267e%2Fmulti3-4.7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7/multi3-4.7.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:9c0355831ffb43f8fa1b951007a24cf01fd9e5b881d486c78cc64d2076dccd74%2Fmulti3-4.7-20210427.023555-16.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210427.023555-16.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:deda0a206dc5d9ca766c89bb4b838e1cf3882884b170e60eaef260231ff7267e%2Fmulti3-4.7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7/multi3-4.7.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:26+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:deda0a206dc5d9ca766c89bb4b838e1cf3882884b170e60eaef260231ff7267e%2Fmulti3-4.7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7/multi3-4.7.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:27+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-86028",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-86028&comp_id=generic:%2F%2Fsha256:f3661f0bb20a900469606294a1bf6e787aaed0e1c13dbbe110dfee67103ef9b5%2Fmulti3-4.7-20210314.020142-7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.020142-7.war"
+            ]
+        },
+        {
+            "description": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:27+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-85466",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-85466&comp_id=generic:%2F%2Fsha256:f3661f0bb20a900469606294a1bf6e787aaed0e1c13dbbe110dfee67103ef9b5%2Fmulti3-4.7-20210314.020142-7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.020142-7.war"
+            ]
+        },
+        {
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:27+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-75464",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-75464&comp_id=generic:%2F%2Fsha256:f3661f0bb20a900469606294a1bf6e787aaed0e1c13dbbe110dfee67103ef9b5%2Fmulti3-4.7-20210314.020142-7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.020142-7.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:27+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-87741",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-87741&comp_id=generic:%2F%2Fsha256:f3661f0bb20a900469606294a1bf6e787aaed0e1c13dbbe110dfee67103ef9b5%2Fmulti3-4.7-20210314.020142-7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.020142-7.war"
+            ]
+        },
+        {
+            "description": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "type": "Security",
+            "infected_components": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "created": "2021-06-11T12:51:27+08:00",
+            "watch_name": "repo-security-app1-maven-snapshot-local",
+            "issue_id": "XRAY-100357",
+            "violation_details_url": "https://demo.jfrogchina.com/xray/api/v1/violations?watch_id=0c18f5fa9152b69776319a4d&issue_id=XRAY-100357&comp_id=generic:%2F%2Fsha256:f3661f0bb20a900469606294a1bf6e787aaed0e1c13dbbe110dfee67103ef9b5%2Fmulti3-4.7-20210314.020142-7.war",
+            "impacted_artifacts": [
+                "default/app1-maven-snapshot-local/org/jfrog/test/multi3/4.7-SNAPSHOT/multi3-4.7-20210314.020142-7.war"
+            ]
+        }
+    ]
+}

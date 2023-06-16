@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  annotations:
+    pv.kubernetes.io/provisioned-by: diskplugin.csi.alibabacloud.com
+  name: d-2ze2uhzt894ejmbc57as
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 8Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: redis-data-pipelines-redis-master-0
+    namespace: pipelines
+  csi:
+    driver: diskplugin.csi.alibabacloud.com
+    fsType: ext4
+    volumeAttributes:
+      allowVolumeExpansion: 'true'
+      app.kubernetes.io/instance: pipelines
+      app.kubernetes.io/name: redis
+      csi.alibabacloud.com/reclaimPolicy: Retain
+      csi.alibabacloud.com/storageclassName: alicloud-disk-available
+      role: primary
+      storage.kubernetes.io/csiProvisionerIdentity: 1657313695386-8081-diskplugin.csi.alibabacloud.com
+      type: cloud_efficiency
+    volumeHandle: d-2ze2uhzt894ejmbc57as
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: topology.diskplugin.csi.alibabacloud.com/zone
+              operator: In
+              values:
+                - cn-beijing-k
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: alicloud-disk-available
+  volumeMode: Filesystem

@@ -1,0 +1,206 @@
+{
+    "total_rows": 7,
+    "rows": [
+        {
+            "cves": [
+                {
+                    "cvss_v2_score": 10,
+                    "cvss_v2_vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                    "cvss_v3_score": 9.8,
+                    "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cvss2_max_score": 10,
+            "cvss3_max_score": 9.8,
+            "summary": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+            "severity": "High",
+            "vulnerable_component": "gav://com.alibaba:fastjson:1.2.24",
+            "impacted_artifact": "gav://com.alibaba:fastjson:1.2.24",
+            "impact_path": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "path": "xray-project-maven-whitelist-local/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar",
+            "fixed_versions": [
+                "1.2.28"
+            ],
+            "published": "2019-08-20T18:53:38+08:00",
+            "artifact_scan_time": "2021-05-08T13:53:40+08:00",
+            "issue_id": "XRAY-86028",
+            "package_type": "maven",
+            "provider": "JFrog",
+            "description": "Alibaba fastjson contains an unspecified flaw that is triggered when handling a specially crafted packet. This may allow a remote attacker to execute arbitrary code.",
+            "references": [
+                "https://www.huawei.com/en/psirt/security-advisories/huawei-sa-20191204-01-fastjson-en",
+                "https://paper.seebug.org/292/",
+                "https://www.seebug.org/vuldb/ssvid-98020",
+                "https://www.cnvd.org.cn/flaw/show/CNVD-2019-22238",
+                "https://www.weaver.com.cn/cs/securityDownload.asp"
+            ]
+        },
+        {
+            "cves": [
+                {
+                    "cvss_v2_score": 9.3,
+                    "cvss_v2_vector": "CVSS:2.0/AV:N/AC:M/Au:N/C:C/I:C/A:C",
+                    "cvss_v3_score": 9.8,
+                    "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cvss2_max_score": 9.3,
+            "cvss3_max_score": 9.8,
+            "summary": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+            "severity": "High",
+            "vulnerable_component": "gav://com.alibaba:fastjson:1.2.24",
+            "impacted_artifact": "gav://com.alibaba:fastjson:1.2.24",
+            "impact_path": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "path": "xray-project-maven-whitelist-local/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar",
+            "fixed_versions": [
+                "1.2.70",
+                "1.2.69"
+            ],
+            "published": "2020-06-11T02:15:13+08:00",
+            "artifact_scan_time": "2021-05-08T13:53:40+08:00",
+            "issue_id": "XRAY-100357",
+            "package_type": "maven",
+            "provider": "JFrog",
+            "description": "Alibaba fastjson contains an unspecified flaw related to autoType restrictions. This may allow a context-dependent attacker to bypass the restriction to deserialize user-supplied objects and potentially execute arbitrary code.",
+            "references": [
+                "https://github.com/alibaba/fastjson/releases/tag/1.2.70",
+                "https://github.com/alibaba/fastjson/releases/tag/1.2.69",
+                "https://github.com/alibaba/fastjson/wiki/security_update_20200601"
+            ]
+        },
+        {
+            "cves": [
+                {
+                    "cve": "CVE-2017-18349",
+                    "cvss_v2_score": 10,
+                    "cvss_v2_vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                    "cvss_v3_score": 9.8,
+                    "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+                }
+            ],
+            "cvss2_max_score": 10,
+            "cvss3_max_score": 9.8,
+            "summary": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "severity": "High",
+            "vulnerable_component": "gav://com.alibaba:fastjson:1.2.24",
+            "impacted_artifact": "gav://com.alibaba:fastjson:1.2.24",
+            "impact_path": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "path": "xray-project-maven-whitelist-local/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar",
+            "fixed_versions": [
+                "1.2.28"
+            ],
+            "published": "2019-02-21T17:35:06+08:00",
+            "artifact_scan_time": "2021-05-08T13:53:40+08:00",
+            "issue_id": "XRAY-75464",
+            "package_type": "maven",
+            "provider": "JFrog",
+            "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+            "references": [
+                "https://github.com/pippo-java/pippo/issues/466",
+                "https://github.com/alibaba/fastjson/wiki/security_update_20170315",
+                "https://fortiguard.com/encyclopedia/ips/44059"
+            ]
+        },
+        {
+            "cves": [
+                {
+                    "cvss_v2_score": 7.8,
+                    "cvss_v2_vector": "CVSS:2.0/AV:N/AC:L/Au:N/C:N/I:N/A:C",
+                    "cvss_v3_score": 7.5,
+                    "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                }
+            ],
+            "cvss2_max_score": 7.8,
+            "cvss3_max_score": 7.5,
+            "summary": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+            "severity": "High",
+            "vulnerable_component": "gav://com.alibaba:fastjson:1.2.24",
+            "impacted_artifact": "gav://com.alibaba:fastjson:1.2.24",
+            "impact_path": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "path": "xray-project-maven-whitelist-local/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar",
+            "fixed_versions": [
+                "1.2.60"
+            ],
+            "published": "2019-09-09T21:46:11+08:00",
+            "artifact_scan_time": "2021-05-08T13:53:40+08:00",
+            "issue_id": "XRAY-87741",
+            "package_type": "maven",
+            "provider": "JFrog",
+            "description": "Alibaba fastjson contains a flaw in /parser/JSONLexerBase.java that is triggered during the handling of a specially crafted request packet. This may allow a remote attacker to cause a denial of service.",
+            "references": [
+                "https://www.cnvd.org.cn/flaw/show/CNVD-2019-30716",
+                "https://github.com/alibaba/fastjson/commit/995845170527221ca0293cf290e33a7d6cb52bf7"
+            ]
+        },
+        {
+            "cves": [],
+            "summary": "FastJSON remote code execution 0day vulnerability.",
+            "severity": "High",
+            "vulnerable_component": "gav://com.alibaba:fastjson:1.2.24",
+            "impacted_artifact": "gav://com.alibaba:fastjson:1.2.24",
+            "impact_path": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "path": "xray-project-maven-whitelist-local/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar",
+            "fixed_versions": [
+                "1.2.58"
+            ],
+            "published": "2019-07-31T15:47:23+08:00",
+            "artifact_scan_time": "2021-05-08T13:53:40+08:00",
+            "issue_id": "XRAY-85466",
+            "package_type": "maven",
+            "provider": "JFrog",
+            "description": "With this 0day vulnerability, a malicious attacker can construct an attack request to bypass the FastJSON blacklist policy. For example, an attacker remotely causes a server to execute a specified command through a carefully crafted request (the calculator program runs successfully in the following example).",
+            "references": [
+                "https://github.com/alibaba/fastjson/issues/2500",
+                "https://helpcdn.aliyun.com/document_detail/123431.html"
+            ]
+        },
+        {
+            "cves": [],
+            "summary": "test",
+            "severity": "High",
+            "vulnerable_component": "gav://com.alibaba:fastjson:1.2.24",
+            "impacted_artifact": "gav://com.alibaba:fastjson:1.2.24",
+            "impact_path": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "path": "xray-project-maven-whitelist-local/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar",
+            "fixed_versions": [],
+            "published": "2020-07-03T10:10:16+08:00",
+            "artifact_scan_time": "2021-05-08T13:53:40+08:00",
+            "issue_id": "CustomIssue_EhIOTQ5C9EFCNFOU",
+            "package_type": "maven",
+            "provider": "Custom",
+            "description": "test",
+            "references": []
+        },
+        {
+            "cves": [],
+            "summary": "CNVD-2019-32498",
+            "severity": "High",
+            "vulnerable_component": "gav://com.alibaba:fastjson:1.2.24",
+            "impacted_artifact": "gav://com.alibaba:fastjson:1.2.24",
+            "impact_path": [
+                "gav://com.alibaba:fastjson:1.2.24"
+            ],
+            "path": "xray-project-maven-whitelist-local/com/alibaba/fastjson/1.2.24/fastjson-1.2.24.jar",
+            "fixed_versions": [],
+            "published": "2021-02-26T14:05:05+08:00",
+            "artifact_scan_time": "2021-05-08T13:53:40+08:00",
+            "issue_id": "CustomIssue_tHJETsxMo5q3S42I",
+            "package_type": "maven",
+            "provider": "Custom",
+            "description": "Fastjson是一款开源JSON解析库，它可以解析JSON格式的字符串，支持将Java Bean序列化为JSON字符串，也可以从JSON字符串反序列化到JavaBean。\n\nFastjson存在远程代码执行漏洞，攻击者可利用该漏洞远程执行恶意代码来入侵服务器。",
+            "references": []
+        }
+    ]
+}

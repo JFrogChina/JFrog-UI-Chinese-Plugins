@@ -1,0 +1,31 @@
+<config version="v1">
+    <chain>
+        <provider id="cache-fs" type="cache-fs">   
+            <provider id="sharding-cluster" type="sharding-cluster">
+                <sub-provider id="state-aware" type="state-aware"/>
+                <dynamic-provider id="remote" type="remote"/>
+                <property name="zones" value="remote"/>
+            </provider>
+        </provider>
+    </chain>
+   
+    <provider id="sharding-cluster" type="sharding-cluster">
+        <readBehavior>crossNetworkStrategy</readBehavior>
+        <writeBehavior>crossNetworkStrategy</writeBehavior>
+        <redundancy>2</redundancy>
+        <lenientLimit>1</lenientLimit>
+    </provider>
+   
+    <provider id="state-aware" type="state-aware">
+       <fileStoreDir>filestore1</fileStoreDir>
+    </provider>
+   
+    <provider id="remote" type="remote">
+        <checkPeriod>15000</checkPeriod>
+        <connectionTimeout>5000</connectionTimeout>
+        <socketTimeout>15000</socketTimeout>
+        <maxConnections>200</maxConnections>
+        <connectionRetry>2</connectionRetry>
+        <zone>remote</zone>
+    </provider>
+</config

@@ -1,0 +1,69 @@
+Congratulations. You have just deployed JFrog Platform Chart with following products:
+
+{{- if .Values.artifactory.enabled }}
+- artifactory
+{{- end }}
+
+{{- if .Values.xray.enabled }}
+- xray
+{{- end }}
+
+{{- if index .Values "insight" "enabled" }}
+- insight
+{{- end }}
+
+{{- if .Values.distribution.enabled }}
+- distribution
+{{- end }}
+
+{{- if .Values.pdnServer.enabled }}
+- pdn-server
+{{- end }}
+
+{{- if .Values.pipelines.enabled }}
+- pipelines
+{{- end }}
+
+{{- if .Values.artifactory.enabled }}
+
+1. Get the Artifactory URL by running these commands:
+
+   {{- if .Values.artifactory.ingress.enabled }}
+   {{- range .Values.artifactory.ingress.hosts }}
+     http://{{ . }}
+   {{- end }}
+   
+   {{- else if contains "NodePort" .Values.artifactory.nginx.service.type }}
+   export NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ include "call-nested" (list . "artifactory" "artifactory.nginx.fullname") }})
+   export NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")
+   echo http://$NODE_IP:$NODE_PORT/
+
+   {{- else if contains "LoadBalancer"  .Values.artifactory.nginx.service.type }}
+   NOTE: It may take a few minutes for the LoadBalancer IP to be available.
+         You can watch the status of the service by running 'kubectl get svc --namespace {{ .Release.Namespace }} -w {{ include "call-nested" (list . "artifactory" "artifactory.nginx.fullname") }}'
+   export SERVICE_IP=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "call-nested" (list . "artifactory" "artifactory.nginx.fullname") }} -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+   echo http://$SERVICE_IP/
+
+   {{- else if contains "ClusterIP" .Values.artifactory.nginx.service.type }}
+   export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "component={{ .Values.artifactory.nginx.name }}" -o jsonpath="{.items[0].metadata.name}")
+   echo http://127.0.0.1:{{ .Values.artifactory.nginx.externalPortHttp }}
+   kubectl port-forward --namespace {{ .Release.Namespace }} $POD_NAME {{ .Values.artifactory.nginx.externalPortHttp }}:{{ .Values.artifactory.nginx.internalPortHttp }}
+   {{- end }}
+
+2. Open Artifactory in your browser
+   Default credential for Artifactory:
+   user: admin
+   password: password
+
+Open Artifactory URL in your browser.
+{{- end }}
+
+{{- if .Values.postgresql.enabled }}
+To extract the database password, run the following
+export DB_PASSWORD=$(kubectl get --namespace {{ .Release.Namespace }} $(kubectl get secret --namespace {{ .Release.Namespace }} -o name | grep postgresql) -o jsonpath="{.data.postgresql-password}" | base64 --decode)
+echo ${DB_PASSWORD}
+---------------------------------------------------------------------------------------------------------------------------------------------------
+***WARNING*** You are using the bundled postgresql database from the chart. Bundled postgresql database is not supported for production use cases. 
+Use an external postgresql database for production deployments.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+{{- end }}

@@ -1,0 +1,1 @@
+jf rt s --spec search-by-pattern.json

@@ -1,0 +1,24 @@
+shared:
+    node:
+        id: art1
+        ip: 120.25.175.75
+
+artifactory:
+    port: 8081
+router:
+    entrypoints:
+        externalPort: 8082
+        internalPort: 8046
+        grpcPort: 8047
+        traefikApiPort: 8049
+
+# artifactory:
+#     port: 9081
+# router:
+#     entrypoints:
+#         externalPort: 9082
+#         internalPort: 9046
+#         grpcPort: 9047
+#         traefikApiPort: 9049
+
+        

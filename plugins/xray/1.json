@@ -1,0 +1,168 @@
+{
+    "artifacts": [
+        {
+            "general": {
+                "name": "com.alibaba:fastjson",
+                "component_id": "com.alibaba:fastjson:1.2.24",
+                "pkg_type": "maven"
+            },
+            "issues": [
+                {
+                    "issue_id": "XRAY-75464",
+                    "summary": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+                    "description": "parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.",
+                    "issue_type": "security",
+                    "severity": "High",
+                    "provider": "JFrog",
+                    "cves": [
+                        {
+                            "cve": "CVE-2017-18349",
+                            "cvss_v2": "10.0/CVSS:2.0/AV:N/AC:L/Au:N/C:C/I:C/A:C"
+                        }
+                    ],
+                    "created": "2019-02-21T00:00:00.617Z",
+                    "components": [
+                        {
+                            "component_id": "com.alibaba:fastjson",
+                            "fixed_versions": [
+                                "[1.2.28]"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "issue_id": "XRAY-86028",
+                    "summary": "Alibaba fastjson Packet Handling Unspecified Remote Code Execution",
+                    "description": "Alibaba fastjson contains an unspecified flaw that is triggered when handling a specially crafted packet. This may allow a remote attacker to execute arbitrary code.",
+                    "issue_type": "security",
+                    "severity": "High",
+                    "provider": "JFrog",
+                    "cves": [
+                        {
+                            "cvss_v2": "10.0/AV:N/AC:L/Au:N/C:C/I:C/A:C"
+                        }
+                    ],
+                    "created": "2019-08-20T00:00:00.450Z",
+                    "components": [
+                        {
+                            "component_id": "com.alibaba:fastjson",
+                            "fixed_versions": [
+                                "[1.2.28]"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "issue_id": "CustomIssue_EhIOTQ5C9EFCNFOU",
+                    "summary": "test",
+                    "description": "test",
+                    "issue_type": "other",
+                    "severity": "High",
+                    "provider": "Custom",
+                    "created": "2020-07-03T00:00:00.706Z",
+                    "components": [
+                        {
+                            "component_id": "com.alibaba:fastjson"
+                        }
+                    ]
+                },
+                {
+                    "issue_id": "XRAY-100357",
+                    "summary": "Alibaba fastjson Unspecified autoType Restrictions Bypass Object Deserialization Remote Code Execution",
+                    "description": "Alibaba fastjson contains an unspecified flaw related to autoType restrictions. This may allow a context-dependent attacker to bypass the restriction to deserialize user-supplied objects and potentially execute arbitrary code.",
+                    "issue_type": "security",
+                    "severity": "High",
+                    "provider": "JFrog",
+                    "cves": [
+                        {
+                            "cvss_v2": "9.3/AV:N/AC:M/Au:N/C:C/I:C/A:C"
+                        }
+                    ],
+                    "created": "2020-06-11T00:00:00.447Z",
+                    "components": [
+                        {
+                            "component_id": "com.alibaba:fastjson",
+                            "fixed_versions": [
+                                "[1.2.70]",
+                                "[1.2.69]"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "issue_id": "XRAY-87741",
+                    "summary": "Alibaba fastjson /parser/JSONLexerBase.java Request Packet Handling Remote DoS",
+                    "description": "Alibaba fastjson contains a flaw in /parser/JSONLexerBase.java that is triggered during the handling of a specially crafted request packet. This may allow a remote attacker to cause a denial of service.",
+                    "issue_type": "security",
+                    "severity": "High",
+                    "provider": "JFrog",
+                    "cves": [
+                        {
+                            "cvss_v2": "7.8/AV:N/AC:L/Au:N/C:N/I:N/A:C"
+                        }
+                    ],
+                    "created": "2019-09-09T00:00:00.256Z",
+                    "components": [
+                        {
+                            "component_id": "com.alibaba:fastjson",
+                            "fixed_versions": [
+                                "[1.2.60]"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "issue_id": "CustomIssue_tHJETsxMo5q3S42I",
+                    "summary": "CNVD-2019-32498",
+                    "description": "Fastjson是一款开源JSON解析库，它可以解析JSON格式的字符串，支持将Java Bean序列化为JSON字符串，也可以从JSON字符串反序列化到JavaBean。\n\nFastjson存在远程代码执行漏洞，攻击者可利用该漏洞远程执行恶意代码来入侵服务器。",
+                    "issue_type": "security",
+                    "severity": "High",
+                    "provider": "Custom",
+                    "created": "2021-02-26T00:00:00.637Z",
+                    "components": [
+                        {
+                            "component_id": "com.alibaba:fastjson"
+                        }
+                    ]
+                },
+                {
+                    "issue_id": "XRAY-85466",
+                    "summary": "FastJSON remote code execution 0day vulnerability.",
+                    "description": "With this 0day vulnerability, a malicious attacker can construct an attack request to bypass the FastJSON blacklist policy. For example, an attacker remotely causes a server to execute a specified command through a carefully crafted request (the calculator program runs successfully in the following example).",
+                    "issue_type": "security",
+                    "severity": "High",
+                    "provider": "JFrog",
+                    "created": "2019-07-31T00:00:00.576Z",
+                    "components": [
+                        {
+                            "component_id": "com.alibaba:fastjson",
+                            "fixed_versions": [
+                                "[1.2.58]"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "licenses": [
+                {
+                    "name": "Apache-2.0",
+                    "full_name": "The Apache Software License, Version 2.0",
+                    "more_info_url": [
+                        "http://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt",
+                        "https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt",
+                        "http://licenses.nuget.org/Apache-2.0",
+                        "https://licenses.nuget.org/Apache-2.0",
+                        "http://www.apache.org/licenses/LICENSE-2.0",
+                        "https://spdx.org/licenses/Apache-2.0.html",
+                        "https://spdx.org/licenses/Apache-2.0",
+                        "http://www.opensource.org/licenses/apache2.0.php",
+                        "http://www.opensource.org/licenses/Apache-2.0"
+                    ],
+                    "components": [
+                        "gav://com.alibaba:fastjson:1.2.24"
+                    ]
+                }
+            ]
+        }
+    ]
+}

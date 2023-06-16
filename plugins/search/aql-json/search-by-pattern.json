@@ -1,0 +1,8 @@
+{
+    "files": [
+            {
+            "pattern": "app1-maven-release-local/*.war",
+            "build": "kyle-demo/2"
+            }
+    ]
+}

@@ -1,0 +1,16 @@
+shared:
+    node:
+        ip: 172.25.213.214
+        id: iZwz9b3m5l391qmjxqyn4gZ
+        name: iZwz9b3m5l391qmjxqyn4gZ
+        haEnabled: true
+        affinity: any
+    database:
+        type: postgresql
+        driver: org.postgresql.Driver
+        password: cba250.aesgcm256.yqj-xxx
+        username: artifactory
+        url: jdbc:postgresql://172.25.213.214:5432/artifactory
+router:
+    entrypoints:
+        externalPort: 8082
