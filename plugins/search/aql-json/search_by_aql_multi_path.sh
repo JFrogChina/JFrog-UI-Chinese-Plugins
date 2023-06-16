@@ -1,1 +1,0 @@
-jf rt s --spec search-by-aql_multi_path.json

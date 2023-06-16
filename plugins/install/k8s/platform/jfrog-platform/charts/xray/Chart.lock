@@ -1,9 +1,0 @@
-dependencies:
-- name: postgresql
-  repository: https://charts.jfrog.io/
-  version: 10.3.18
-- name: rabbitmq
-  repository: https://charts.jfrog.io/
-  version: 8.31.6
-digest: sha256:eeba3ce8548800c19ccd1648a6f0f74f73bc7df5b80e493408d51837e27c42bf
-generated: "2022-04-21T12:51:12.512127+05:30"
